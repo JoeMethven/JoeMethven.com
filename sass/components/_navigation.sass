@@ -1,0 +1,226 @@
+@import helpers/typography
+@import helpers/mixins
+@import helpers/vars
+
+// MAIN NAVIGATION (1000 +)
+
+#navigation
+	position: fixed
+	top: 0
+	width: 100%
+	display: none
+	z-index: 1000
+	border-bottom: 1px solid white
+
+	@media(max-width: 600px)
+		height: initial!important
+
+	.nav
+		background: $purple
+		margin: 0
+		text-align: center
+		height: 75px
+		display: -webkit-box  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+		display: -ms-flexbox  /* TWEENER - IE 10 */
+		display: -webkit-flex
+		display: flex
+		flex-direction: row
+		align-items: center
+		-webkit-align-items: center
+		justify-content: center
+		-webkit-justify-content: center
+
+	.logo-image
+		padding: 0
+		img
+			max-height: 50px
+
+	a
+		color: white
+		letter-spacing: 2px
+		padding: 13px 18px
+		margin: 0 20px
+		font-size: 11px
+		border-radius: 5px
+		+transition(.5s)
+	li
+		width: 156px
+	li a:hover
+		border-radius: 5px
+		box-shadow: inset 0px 0px 0px 2px rgba(255,255,255,1)
+		color: white!important
+		background: none!important
+	.main-navigation
+		display: inline-block
+		vertical-align: middle
+
+	.nav > li > a:focus
+		color: white
+		background-color: transparent
+
+
+// MOBILE - TABLET NAVIGATION (1000PX -)
+.mobile-navigation
+	width: 100%
+	float: none
+	display: flex
+	align-items: center
+	flex-flow: row-wrap
+	.logo
+		align-self: flex-start
+	.dropdown
+		margin-left: auto
+
+#mobileNavigation
+	+transition(.5s)
+	display: none
+	visibility: hidden
+	opacity: 0
+	height: 100vh
+	width: 100vw
+	z-index: 1001
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	overflow: hidden
+	background-color: $transparent_purple
+
+	display: -webkit-box  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox  /* TWEENER - IE 10 */
+	display: -webkit-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	-webkit-align-items: center
+	justify-content: center
+	-webkit-justify-content: center
+
+	text-align: center
+
+	ul.main-navigation
+		width: inherit
+		height: inherit
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-ms-flex-align: center
+		align-items: center
+		-webkit-align-items: center
+		-ms-flex-pack: center
+		justify-content: center
+		-webkit-justify-content: center
+		text-align: center
+		padding-left: 0
+
+	.close
+		position: absolute
+		top: 25px
+		right: 42px
+		opacity: 1
+		img
+			width: 20px
+
+	li
+		list-style: none
+		margin-bottom: 25px
+		a
+			color: white
+			text-decoration: none
+			letter-spacing: 2px
+			padding: 13px 18px
+			margin: 0 20px
+			font-size: 28px
+			border-radius: 5px
+			font-weight: 300
+			+transition(.5s)
+			&:hover
+				border-radius: 5px
+				box-shadow: inset 0px 0px 0px 2px rgba(255,255,255,1)
+				color: white!important
+				background: none!important
+	li.last
+		margin-bottom: 0
+
+.mobileNavigationOn
+	opacity: 1!important
+	display: flex!important
+	visibility: visible!important
+
+.navigationMain
+	+transition(.5s)
+	opacity: 0
+	display: none
+	visibility: hidden
+
+@media(max-width: 1000px)
+	#navigation
+		padding: 0
+		height: 60px
+		img
+			height: 35px
+		.dropdown
+			.dropdown-menu
+				left: auto
+				right: 5%
+				top: 47px
+				background-color: $purple
+				border-radius: 0
+				width: 250px
+				
+				li
+					width: 100%
+
+				li a
+					color: white
+					border: none
+					border-radius: none
+					width: 100%
+					letter-spacing: 1px
+					padding-top: 10px
+					padding-bottom: 10px
+					padding-left: 10px
+					font:
+						size: 15px
+						weight: 400
+
+				li a.current
+					border-radius: 0
+					border: none
+
+			a
+				padding: 0
+				margin: 0
+			.fa
+				font-size: 25px
+				text-shadow: inset 5px 10px 3px 3px $purple
+	.main-navigation
+		display: none
+		vertical-align: none
+		text-align: left
+		ul li a, ul, ul li, img
+			display: none
+
+@media(min-width: 1000px)
+	.mobile-navigation
+		display: none
+
+
+.current:hover
+	color: white
+.current:active
+	color: white
+	background: none!important
+.current
+	color: $purple!important
+	border-radius: 5px
+	background-color: white!important
+	+transition(1s)
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus
+	background: none
+	background-color: none

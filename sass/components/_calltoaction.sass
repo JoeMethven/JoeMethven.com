@@ -1,0 +1,367 @@
+#calltoaction-wrapper
+	height: 700px
+	padding-left: 10vw
+	padding-right: 10vw
+	background-color: $light_gray
+
+	display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox /* TWEENER - IE 10 */
+	display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex
+	flex-direction: row
+	-webkit-flex-direction: row
+	align-items: center
+	-webkit-align-items: center
+	justify-content: center
+	-webkit-justify-content: center
+
+	overflow: hidden
+
+	.action-text:first-child
+		margin-bottom: 30px
+
+	.action-text
+		@media(max-width: 1229px)
+			width: 80%
+		@media(max-width: 711px)
+			width: 100%
+
+	.button
+		padding-left: 0
+		padding-right: 0
+		text-align: center
+		padding: 24px 60px
+		display: inline-block
+		border-radius: 10px
+		background-color: $green
+		+transition(.8s)
+		h2
+			margin-top: 0
+			margin-bottom: 0
+			color: white
+			+font("Raleway")
+			font:
+				weight: 700
+				size: 18px
+			letter-spacing: 3px
+			+transition(.8s)
+
+	.button:hover
+		background-color: transparent
+		box-shadow: 0 0 0 3px $gray inset
+		text-decoration: none
+		h2
+			color: $gray
+
+	.text
+		strong
+			font-weight: 600
+		h3
+			color: $gray
+			font:
+				weight: 200
+			+font("Raleway")
+			margin-top: 0
+			margin-bottom: 0
+
+			&:nth-child(1)
+				font-size: 2.4em
+			&:nth-child(2)
+				margin-top: 20px
+				font-size: 3em
+			@media(max-width: 1600px)
+				&:nth-child(1)
+					font-size: 2.1em
+				&:nth-child(2)
+					font-size: 2.6em
+			@media(max-width: 1520px)
+				&:nth-child(1)
+					font-size: 1.9em
+				&:nth-child(2)
+					font-size: 2.3em
+			@media(max-width: 850px)
+				&:nth-child(1)
+					font-size: 1.8em
+				&:nth-child(2)
+					font-size: 1.5em
+			@media(max-width: 452px)
+				&:nth-child(1)
+					font-size: 1.5em
+				&:nth-child(2)
+					font-size: 1.2em
+
+
+	.col-md-6:first-child
+		margin-right: 5%
+
+	.graphic
+		.monitor
+			display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+			display: -ms-flexbox /* TWEENER - IE 10 */
+			display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+			display: flex
+			flex-direction: row
+			justify-content: center
+			-webkit-justify-content: center
+			-webkit-flex-direction: row
+			position: relative
+			#contents
+				@extend .monitor
+				overflow: hidden
+				border-radius: 8px
+				min-width: 580px
+				min-height: 34vh
+				background-color: $green
+				border: 20px solid #353641
+				border-bottom: 30px solid #353641
+				min-height: 320px
+
+				#websites
+					position: absolute
+					width: 100%
+					left: 50%
+					#bad-website
+						height: 245px
+						width: 50%
+						background-color: #f3f3f3
+						border-radius: 4px
+						margin-top: 2%
+						overflow: hidden
+						position: relative
+						left: -25%
+						.bad-website-contents
+							#bad-website-element-1
+								position: absolute
+								background-color: $purple
+								height: 50px
+								width: 100px
+								top: 4%
+								left: 4%
+							#bad-website-element-2
+								position: absolute
+								background-color: $green
+								height: 15px
+								width: 180px
+								top: 28%
+								left: 4%
+							#bad-website-element-3
+								.p-bar-1-1
+									position: absolute
+									height: 4px
+									width: 29%
+									background-color: $purple
+									top: 39%
+									left: 4%
+								.p-bar-1-2
+									@extend .p-bar-1-1
+									top: 43%
+								.p-bar-1-3
+									@extend .p-bar-1-1
+									top: 47%
+							#bad-website-element-4
+								position: absolute
+								top: 53%
+								left: 4%
+								height: 60px
+								width: 40%
+								background-color: $red
+							#bad-website-element-5
+								position: absolute
+								top: 53%
+								left: 46%
+								height: 60px
+								width: 40%
+								background-color: $red
+							#bad-website-element-6
+								position: absolute
+								bottom: 4%
+								left: 4%
+								width: 92%
+								height: 25px
+								background-color: $green
+
+					#good-website
+						z-index: 100
+						height: 245px
+						width: 50%
+						background-color: #f3f3f3
+						border-radius: 4px
+						margin-top: 2%
+						overflow: hidden
+						position: relative
+						left: -25%
+						top: 32vh
+						.good-website-contents
+							#good-website-element-1
+								position: absolute
+								background-color: $purple
+								height: 24px
+								width: 27%
+								top: 7%
+								left: 7%
+							#good-website-element-2
+								position: absolute
+								background-color: $purple
+								height: 24px
+								width: 56%
+								top: 7%
+								left: 37%
+								margin-right: 7%
+							#good-website-element-3
+								position: absolute
+								width: 100%
+								height: 55px
+								background-color: $red
+								top: 22%
+							#good-website-element-4
+								position: absolute
+								background-color: $green
+								height: 10px
+								width: 60%
+								top: 50%
+								left: 7%
+							#good-website-element-5
+								.p-bar-1-1
+									position: absolute
+									height: 4px
+									width: 27.333333%
+									background-color: $purple
+									top: 57%
+									left: 7%
+								.p-bar-1-2
+									@extend .p-bar-1-1
+									left: 36.3%
+								.p-bar-1-3
+									@extend .p-bar-1-1
+									right: 7%
+									left: initial
+							#good-website-element-6
+								.p-bar-2-1
+									position: absolute
+									height: 4px
+									width: 27.333333%
+									background-color: $purple
+									left: 7%
+									top: 61%
+								.p-bar-2-2
+									@extend .p-bar-2-1
+									left: 36.3%
+								.p-bar-2-3
+									@extend .p-bar-2-1
+									right: 7%
+									left: initial
+							#good-website-element-7
+								.p-bar-3-1
+									position: absolute
+									height: 4px
+									width: 27.333333%
+									background-color: $purple
+									left: 7%
+									top: 65%
+								.p-bar-3-2
+									@extend .p-bar-3-1
+									left: 36.3%
+								.p-bar-3-3
+									@extend .p-bar-3-1
+									right: 7%
+									left: initial
+							#good-website-element-8
+								position: absolute
+								left: 7%
+								height: 42px
+								width: 40%
+								background-color: $red
+								top: 71%
+							#good-website-element-9
+								position: absolute
+								left: 52%
+								background-color: $green
+								height: 10px
+								width: 34%
+								top: 71%
+							#good-website-element-10
+								.p-bar-4-1
+									position: absolute
+									background-color: $purple
+									height: 4px
+									width: 27.33333%
+									top: 77.5%
+									left: 52%
+								.p-bar-4-2
+									@extend .p-bar-4-1
+									top: 81.5%
+								.p-bar-4-3
+									@extend .p-bar-4-1
+									top: 85%
+							#good-website-element-11
+								position: absolute
+								bottom: 6%
+								background-color: $green
+								left: 7%
+								width: 86%
+								height: 5px
+				.icon
+					position: absolute
+					left: 50%
+					bottom: -20px
+					.icon-contents
+						position: relative
+						left: -50%
+						background-color: #e1e1e1
+						width: 12px
+						height: 12px
+						border-radius: 50%
+
+		.stand
+			display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+			display: -ms-flexbox /* TWEENER - IE 10 */
+			display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+			display: flex
+			flex-direction: row
+			justify-content: center
+
+@media(max-width: 1520px)
+	#calltoaction-wrapper .graphic .monitor #contents
+		min-width: 480px
+		min-height: 280px
+		border: 10px solid #353641
+		border-bottom: 20px solid #353641
+	#calltoaction-wrapper .stand img
+		height: 70px
+@media(max-width: 1400px)
+	#calltoaction-wrapper
+		.action-text
+			h3
+				font-size: 1.3em
+		.action-button
+			a h2
+				font-size: 14px
+@media(max-width: 1230px)
+	#calltoaction-wrapper
+		height: 850px
+		-webkit-flex-direction: column
+		flex-direction: column
+		.text
+			padding-right: 0
+		.action-content-wrapper
+			margin-top: 40px
+			width: initial
+
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-direction: row
+			flex-direction: row
+			-webkit-flex-direction: column
+			-ms-flex-align: center
+			align-items: center
+			-webkit-align-items: center
+			-ms-flex-pack: center
+			justify-content: center
+			-webkit-justify-content: center
+			h3.last
+				margin-top: 0!important
+				@media(max-width: 863px)
+					margin-top: 10px!important
+			h3
+				text-align: center

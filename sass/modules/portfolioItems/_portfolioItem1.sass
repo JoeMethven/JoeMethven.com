@@ -1,0 +1,422 @@
+#portfolioItem1
+
+
+	.portfolioWrapper
+		.portfolioContainer1, .portfolioContainer2, .portfolioContainer3 
+			padding: 10%
+			width: inherit
+			background: #A1B2A6
+		.fullWebsite
+			img
+				width: 100%
+		.overview
+			color: white
+			padding-left: 3%
+
+			h2
+				+font("Raleway")
+				font:
+					weight: 400
+					size: 80px
+				margin-top: 0	
+
+			h6
+				+font("Raleway")
+				font:
+					weight: 200
+					size: 29px
+				margin-top: 0
+
+			h6 span
+				font:
+					weight: 600
+
+			p
+				margin-top: 3%
+				background: white
+				color: $gray
+				padding: 3%
+				+font("Lato")
+				line-height: 30px
+				font:
+					weight: 300
+					size: 18px
+					
+						
+		.portfolioContainer2
+			margin-left: 0
+			margin-right: 0
+			padding-top: 5%
+			padding-bottom: 5%
+			padding-left: 10%
+			padding-right: 10%
+			width: 100%
+			background: $dark_gray
+			text-align: center
+			color: #CCBA51
+			h4
+				font:
+					weight: 400
+					size: 60px
+					style: italic
+					+font("Raleway")
+					padding-bottom: 3%
+			img
+				width: 200px
+				-webkit-filter: grayscale(1) opacity(0.2)
+				filter: grayscale(1) opacity(0.2)
+				+transition(.5s)
+			img:hover
+				-webkit-filter: grayscale(0) opacity(1.0)
+				filter: grayscale(0) opacity(1.0)
+			.row
+				margin-top: 3%
+			.row.first
+				margin-top: 5%
+
+		.portfolioContainer3
+			padding: 0
+			.banner
+				height: 300px
+
+				display: -webkit-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				flex-direction: column
+				align-items: center
+				-webkit-align-items: center
+				justify-content: center
+				-webkit-justify-content: center
+
+				position: static
+				background: url(../assets/img/craftguard/background.jpg) center no-repeat
+				background-size: cover
+				-webkit-background-size: cover
+				-webkit-backface-visibility: hidden
+				h4
+					margin: 0
+					color: white
+					font:
+						size: 60px
+						weight: 300
+					+font("Lato")
+					background-color: transparentize($black, 0.4)
+					padding: 25px 40px
+			background: $light_gray
+			.row.header
+				height: 600px
+				display: -webkit-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				flex-direction: column
+				align-items: center
+				-webkit-align-items: center
+				justify-content: center
+				-webkit-justify-content: center
+				flex-direction: row
+				-webkit-flex-direction: row
+				padding-left: 5%
+				padding-right: 5%
+
+				.image
+					text-align: center
+					img
+						width: 80%
+				.text
+					width: 40%
+					h3
+						margin-top: 0
+						margin-bottom: 0
+						display: inline-block
+						color: $dark_gray
+						+font("Raleway")
+						font:
+							weight: 400
+							size: 60px
+
+			.content-wrapper
+				border-top: 1px solid transparentize($gray, 0.8)
+				display: block
+				height: initial
+				background: white
+				.content-container
+					padding: 10%
+					display: inline-block
+					.fullWebsite
+						img:nth-child(1)
+							@media(min-width: 992px)
+								padding-bottom: 6%
+					.text
+						p
+							background: none
+							margin-top: 0
+							padding: 0
+							padding-left: 3%
+							margin-top: 3%
+							background: white
+							color: $gray
+							padding: 3%
+							+font("Lato")
+							line-height: 30px
+							font:
+								weight: 300
+							font-size: 18px
+							@media(max-width: 1235px)
+								line-height: 25px
+								font-size: 15px
+							@media(max-width: 991px)
+								padding-left: 0
+								padding-right: 0
+					@media(max-width: 690px)
+						padding-top: 0
+						padding-left: 0
+						padding-right: 0
+						.text
+							padding-left: 10%
+							padding-right: 10%
+						.fullWebsite
+							padding-left: 0
+							padding-right: 0
+							img
+								padding-bottom: 0
+
+
+		.portfolioContainer4
+			background: #F2F2F2
+			padding: 0
+			.content-container
+				padding: 10%
+				height: 500px
+				display: -webkit-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				-webkit-align-items: flex-start
+				justify-content: center
+				-webkit-justify-content: center
+				position: relative
+				.text
+					width: 600px
+					p
+						margin-top: 0
+						padding: 0
+						color: $gray
+						+font("Lato")
+						font-size: 16px
+					@media(max-width: 700px)
+						width: 100%
+				h3
+					margin-top: 0
+					padding: 0
+					color: $gray
+					+font("Raleway")
+					font-size: 30px
+					font-weight: 700
+					margin-right: 20px
+					position: absolute
+					bottom: 40px
+					margin-right: 30px
+					@media(max-width: 550px)
+						font-size: 24px
+
+					&:nth-child(1)
+						color: #C6B148
+						bottom: 0
+						top: 100px
+					i
+						margin-left: 15px
+					
+			.preview
+				background: #C6B148
+				width: 100%
+				height: initial
+				padding-top: 10%
+				padding-bottom: 10%
+				text-align: center
+
+				display: -webkit-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				flex-direction: column
+				align-items: center
+				-webkit-align-items: center
+				justify-content: center
+				-webkit-justify-content: center
+				
+
+				h4
+					margin-top: 0
+					padding: 0
+					color: $gray
+					padding: 3%
+					color: white
+					+font("Lato")
+					font-size: 20px
+					font-weight: 300
+					display: inline-block
+					width: initial
+					&:nth-child(1)
+						padding-top: 0
+				h4.last
+					margin-top: 100px
+
+				img
+					width: 80%
+
+				@media(max-width: 1330px)
+					img
+						width: 90%
+
+				@media(max-width: 991px)
+					padding-top: 0
+					padding-bottom: 0
+					img
+						width: 100%
+
+					h4:nth-child(1)
+						padding-top: 3%
+
+					h4.last
+						margin-top: 0
+
+		// 1560PX- RESPONSIVE CONTAINER 1 MODULE
+
+		@media(max-width: 1560px)
+			width: 100%
+			.portfolioContainer1
+				@media(max-width: 767px)
+					width: 100%
+				.overview
+					@media(max-width: 991px)
+						margin-top: 40px
+					h2
+						font-size: 60px
+						@media(max-width: 1360px)
+							font-size: 50px
+						@media(max-width: 1055px)
+							font-size: 45px
+						@media(max-width: 605px)
+							font-size: 38px
+						@media(max-width: 400px)
+							font-size: 33px
+
+					h6
+						font-size: 24px
+						@media(max-width: 1360px)
+							font-size: 20px
+						@media(max-width: 1055px)
+							font-size: 16px
+						@media(max-width: 605px)
+							font-size: 15px
+
+					p
+						font-size: 15px
+						line-height: 27px
+						@media(max-width: 1360px)
+							font-size: 14px
+							line-height: 22px
+
+		// 1400PX- RESPONSIVE CONTAINER 2 MODULE
+
+		@media(max-width: 1400px)
+			.portfolioContainer2 .row .col-md-3
+				img
+					width: 150px
+
+		@media(max-width: 991px)
+			.portfolioContainer2 .row .col-md-3
+				width: 40%
+				display: inline-block
+			.portfolioContainer2 .row .col-md-3.first
+				margin-bottom: 40px
+			.portfolioContainer2 .row .col-md-3.second
+				margin-bottom: 20px
+
+		@media(max-width: 685px)
+			.portfolioContainer2.col-md-12
+				padding: 0
+				padding-top: 30px
+				padding-bottom: 30px
+			.portfolioContainer2 .row .col-md-3
+				img
+					width: 120px
+
+		@media(max-width: 400px)
+			.portfolioContainer2.col-md-12
+				padding: 0
+				padding-top: 40px
+				padding-bottom: 40px
+			.portfolioContainer2 .row .col-md-3
+				img
+					width: 90px
+
+		// 1110PX- BANNER MODULE
+
+		@media(max-width:1110px)
+			.portfolioContainer3
+				.banner
+					h4
+						font-size: 40px
+
+		@media(max-width:650px)
+			.portfolioContainer3
+				.banner
+					h4
+						font-size: 24px
+
+		@media(max-width:550px)
+			.portfolioContainer3
+				.banner
+					h4
+						font-size: 17px
+
+// 1195PX- HEADER MODULE
+
+@media(max-width: 1260px)
+	#portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header
+		flex-direction: column
+		-webkit-flex-direction: column
+
+		padding-top: 10%
+		padding-bottom: 10%
+
+		.image
+			padding-bottom: 70px
+
+		.text
+			text-align: center
+			width: 600px
+			h3
+				font-size: 35px
+				@media(max-width: 800px)
+					font-size: 26px
+				@media(max-width: 550px)
+					font-size: 22px
+
+@media(max-width: 991px)
+	.portfolioWrapper .portfolioContainer3 .header .image
+		padding-bottom: 50px
+		display: block
+		width: 100%!important
+	.portfolioWrapper .portfolioContainer3 .header .image img
+		width: 60%!important
+
+	#portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text
+		width: 70%
+
+@media(max-width: 759px)
+	.portfolioWrapper .portfolioContainer3 .row.header .image
+		padding-bottom: 30px!important
+		display: block
+		width: 100%!important
+	.portfolioWrapper .portfolioContainer3 .header .image img
+		width: 60%!important
+
+@media(max-width: 574px)
+	.portfolioWrapper .portfolioContainer3 .header .image img
+		width: 80%!important

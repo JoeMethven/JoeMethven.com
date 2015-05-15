@@ -1,0 +1,26 @@
+@import helpers/typography
+@import helpers/mixins
+@import helpers/vars
+
+::-webkit-scrollbar
+	display: none
+	visibility: hidden
+
+#home, #about, #portfolio, #contact
+	padding: 0
+	background: white
+
+	.heading-home, .heading-about, .heading-portfolio, .heading-contact
+		padding: 24px 0
+		background: $purple
+		border-top: 2px solid white
+		border-bottom: 2px solid white
+		h3
+			color: white
+			padding: 10px 20px
+			border-radius: 5px
+			margin: 0
+			@include font('Raleway')
+			font-weight: 400
+			border: 2px solid white
+			float: left

@@ -1,0 +1,96 @@
+#about
+	background-color: white
+	#menu-about
+		position: relative
+		top: -74px
+	.about-container
+		height: 700px
+		width: 840px
+		display: flex
+		align-items: center
+		-webkit-align-items: center
+		@media(max-width: 1070px)
+			.about-wrapper .row
+				.image-wrapper
+					img
+						height: 200px
+				.text-wrapper
+					p, h3
+						font-size: 13px
+						line-height: 18px
+		@media(max-width: 880px)
+			width: 100vw
+			.about-wrapper
+				.row
+					display: block
+				.image-wrapper
+					margin-bottom: 30px
+					width: 100%
+					img
+						height: 250px
+				.text-wrapper
+					width: 60%
+					margin: auto
+		@media(max-width: 558px)
+			height: 900px
+			.about-wrapper
+				.text-wrapper
+					width: 80%
+
+		.row
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-webkit-justify-content: center
+			-ms-flex-pack: center
+			justify-content: center
+			-webkit-align-content: center
+			-ms-flex-line-pack: center
+			align-content: center
+			-webkit-align-self: center
+			-ms-flex-item-align: center
+			align-self: center
+			-webkit-align-content: center
+		.image-wrapper
+			width: 35%
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-webkit-justify-content: center
+			-ms-flex-pack: center
+			justify-content: center
+			-webkit-align-content: center
+			-ms-flex-line-pack: center
+			align-content: center
+			-webkit-align-self: center
+			-ms-flex-item-align: center
+			align-self: center
+			-webkit-align-content: center
+			img
+				height: 250px
+		.text-wrapper
+			vertical-align: top
+			width: 65%
+			h3
+				display: inline-block
+				margin-top: 0
+				+font("Raleway")
+				font:
+					weight: 600
+					size: 15px
+				line-height: 24.89px
+				color: $dark_gray
+			p
+				@extend h3
+				font-weight: 400
+				color: $dark_gray
+
+			.first
+				margin-bottom: 25px
+
+			a
+				text-decoration: none
+				color: $green
+				+transition(.8s)
+			a:hover
+				color: $purple

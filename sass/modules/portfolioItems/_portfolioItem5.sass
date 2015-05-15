@@ -1,0 +1,190 @@
+#portfolioItem5 .portfolioWrapper .portfolioHeader img
+	width: 15%
+	@media(max-width: 1080px)
+		width: 20%
+	@media(max-width: 632px)
+		width: 40%
+	@media(max-width: 400px)
+		width: 55%
+
+#portfolioItem5
+	.portfolioHeader
+		background: #E82635
+	.portfolioWrapper
+		.portfolioContainer5
+			padding-right: 0
+			padding-left: 0
+			.header
+				height: 600px
+				width: 100vw
+				.image
+					width: 100%
+					margin: auto
+					display: block
+					text-align: center
+					img
+						width: 800px
+						height: auto
+				@media(max-width: 1035px)
+					height: 550px
+					.image
+						img
+							width: 745px
+				@media(min-width:981px)
+					.imageMobile
+						display: none
+						visibility: hidden
+				@media(max-width: 980px)
+					height: 450px
+					.image
+						img
+							position: static
+							bottom: 0
+							width: 600px
+							@media(max-width: 730px)
+								width: 450px
+							@media(min-width: 730px)
+								&:nth-child(2)
+									display: none
+									visibility: hidden
+							@media(max-width:729px)
+								&:nth-child(1)
+									display: none
+									visibility: hidden
+						@media(max-width:729px)
+							padding-top: 50px
+							img
+								&:nth-child(2)
+									width: 350px
+									@media(max-width: 400px)
+										width: 270px
+
+				display: -webkit-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				flex-direction: row
+				align-items: center
+				-webkit-align-items: center
+				justify-content: center
+				-webkit-justify-content: center
+
+				position: relative
+				overflow: hidden
+
+			.content
+				height: 100%
+				border-bottom: 3px solid white
+				.image
+					background: #E82635
+
+					height: 800px
+					display: -webkit-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					flex-direction: row
+					align-items: center
+					-webkit-align-items: center
+					justify-content: center
+					-webkit-justify-content: center
+
+					img
+						width: 380px
+						@media(max-width: 1060px)
+							width: 340px
+					@media(max-width: 991px)
+						height: 500px
+						img
+							width: 340px
+							@media(max-width: 512px)
+								width: 300px
+							@media(max-width: 350px)
+								width: 250px
+
+				.text
+					background: #F2F2F2
+
+					height: 800px
+					display: -webkit-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					flex-direction: column
+					-webkit-flex-direction: column
+					align-items: flex-start
+					-webkit-align-items: flex-start
+					justify-content: center
+					-webkit-justify-content: center
+
+					p
+						padding: 10%
+						color: $gray
+						font:
+							weight: 300
+							size: 16px
+						+font("Lato")
+
+						&:nth-child(1)
+							padding-bottom: 0px
+							display: inline-block
+							width: 100%
+
+						&:nth-child(2)
+							padding-top: 0
+
+						a
+							color: $green
+							text-decoration: none
+							
+					@media(max-width: 615px)
+						height: 600px
+					@media(max-width: 530px)
+						height: 700px
+					@media(max-width: 430px)
+						height: 800px
+					@media(max-width: 360px)
+						height: 860px
+
+			.content2
+				height: 800px
+				background: #E82635
+
+				display: -webkit-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				flex-direction: row
+				align-items: center
+				-webkit-align-items: center
+				justify-content: center
+				-webkit-justify-content: center
+
+				.image1
+					margin-right: 17%	
+					img
+						width: 280px
+
+				.image2
+					img
+						width: 240px
+
+				@media(max-width: 1160px)
+					height: 600px
+					.image1
+						margin-right: 12%
+						img
+							width: 190px
+					.image2
+						img
+							width: 150px
+				@media(max-width: 515px)
+					height: 800px
+					flex-direction: column
+					-webkit-flex-direction: column
+					.image1
+						margin-right: 0
+						margin-bottom: 50px
+						width: initial
+					.image2
+						width: initial

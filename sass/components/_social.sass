@@ -1,0 +1,27 @@
+#social-bar
+	height: 150px
+	width: 100%
+	display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox /* TWEENER - IE 10 */
+	display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex
+	flex-direction: row
+	-webkit-flex-direction: row
+	align-items: center
+	-webkit-align-items: center
+	justify-content: space-around
+	-webkit-justify-content: space-around
+	a img
+		height: 50px
+		width: auto
+		@media(max-width: 991px)
+			height: 40px
+		@media(max-width: 468px)
+			height: 34px
+	a img:hover
+		transition: opacity .20s ease-in-out
+		-moz-transition: opacity .20s ease-in-out
+		-webkit-transition: opacity .20s ease-in-out
+		box-shadow: #000 0em 0em 0em
+		opacity: 0.4
+		+transition(.8s)

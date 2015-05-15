@@ -1,0 +1,65 @@
+#footer-wrapper
+	height: 100px
+	background: $black
+	overflow: hidden
+
+	display: -webkit-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	align-items: center
+	-webkit-align-items: center
+	justify-content: space-around
+	-webkit-justify-content: space-around
+
+	.left
+		p
+			margin-bottom: 0
+			color: $light_gray
+			font:
+				family: "Raleway", Helvetica, sans-serif
+				weight: 300
+				size: 12px
+			a
+				color: $green
+	.middle
+		align-self: center
+
+		img
+			width: 50px
+			height: auto
+	.right
+		img
+			width: 30px
+			height: auto
+			margin-right: 20px
+			+transition(".8s ease-in")
+		a:nth-child(4) img
+			width: 36px
+		img:hover
+			transition: opacity .20s ease-in-out
+			-moz-transition: opacity .20s ease-in-out
+			-webkit-transition: opacity .20s ease-in-out
+			box-shadow: #000 0em 0em 0em
+			opacity: 0.6
+	@media(max-width: 840px)
+		.middle
+			display: none
+			visibility: hidden
+	@media(max-width: 640px)
+		.right
+			a:nth-child(4) img
+				width: 26px
+			img
+				width: 20px
+				@media(max-width: 505px)
+					margin-right: 10px
+	@media(max-width: 438px)
+		flex-direction: column
+		-webkit-flex-direction: column
+		height: 140px
+		-webkit-justify-content: center
+		justify-content: center
+		.left
+			margin-bottom: 20px
+			text-align: center

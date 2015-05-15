@@ -1,0 +1,128 @@
+@import helpers/typography
+@import helpers/mixins
+@import helpers/vars
+
+#home
+	height: 100vh
+	position: relative
+	border-bottom: 1px solid #E2E2E2
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	flex-direction: row
+	-webkit-flex-direction: row
+	align-items: center
+	-webkit-align-items: center
+	overflow: hidden
+
+	.triangle-container
+		overflow: hidden
+		position: absolute
+		top: 0
+		right: 0
+		margin: 0 auto
+		margin-right: 0
+		width: 100vh
+		height: 100vh
+		@media(max-width: 1200px)
+			width: 90vh
+		@media(max-width: 1080px)
+			width: 80vh
+
+	.triangle, .triangle img
+		height: 100%
+
+	.triangle img
+		position: relative
+		right: 600px
+
+	.triangle
+		overflow: hidden
+		position: absolute
+		height: 100vh
+		left: 7px
+
+		transform: skewX(45deg)
+
+	.triangle:first-child
+		transform-origin: 100% 0
+
+	.triangle img, .triangle:after
+		transform: skewX(-45deg)
+		transform-origin: inherit
+
+	.text-wrapper
+		margin-left: 20%
+		@media(max-width:1560px)
+			margin-left: 15%
+		@media(max-width: 1320px)
+			margin-left: 10%
+		h1
+			font:
+				family: "Lato", Helvetica, sans-serif
+				weight: 600
+				size: 60px
+			margin-bottom: 0
+			margin-top: 0
+			text-transform: uppercase
+
+		h3
+			@extend h1
+			font:
+				weight: 400
+				size: 40px
+		@media(max-width: 400px)
+			h1
+				font-size: 36px
+			h3
+				font-size: 20px
+		@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2)
+			h1
+				font-size: 36px!important
+			h3
+				font-size: 20px!important
+
+@media(max-width: 999px)
+	#home
+		justify-content: center
+		-webkit-justify-content: center
+		background: url(../assets/img/desk_illustration.png) no-repeat center right fixed
+		background-size: cover
+		-webkit-background-size: cover
+		.triangle-container
+			display: none
+		.text-wrapper
+			margin-left: 0
+			color: white
+			justify-content: center
+			align-items: center
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-ms-flex-direction: row
+			flex-direction: column
+			-webkit-flex-direction: column
+			-ms-flex-align: center
+			align-items: center
+			-webkit-align-items: center
+			h3
+				align-self: center
+
+			@media(max-width: 644px)
+				h1
+					font-size: 50px
+				h3
+					font-size: 25px
+
+			@media(max-width: 400px)
+				h1
+					font-size: 45px
+				h3
+					font-size: 20px
+		
+		@media(max-width: 800px)
+			background: url(../assets/img/desk_illustration.png) no-repeat center right scroll
+			background-size: cover
+			-webkit-background-size: cover

@@ -1,0 +1,118 @@
+#learning
+	margin-top: 100px
+	margin-bottom: 100px
+	.learning-wrapper
+		.content
+			h3
+				display: inline-block
+				margin-top: 0
+				+font("Raleway")
+				font:
+					weight: 600
+					size: 15px
+				line-height: 24.89px
+				color: $gray
+				display: block
+				margin-bottom: 0
+			p
+				@extend h3
+				font-weight: 400
+				color: $gray
+
+			h2
+				+font("Lato")
+				font:
+					weight: 600
+					size: 19px
+				display: inline-block
+				float: left
+				padding: 18px 38px
+				border: 4px solid
+				margin-right: 30px
+				@media(max-width: 1180px)
+					padding: 13px 25px
+					font-size: 14px
+			
+		.current-container
+			h2:nth-of-type(1)
+				color: $html
+				border: 4px solid $html
+			h2:nth-of-type(2)
+				color: $jade
+				border: 4px solid $jade
+			h2:nth-of-type(3)
+				color: $css3
+				border: 4px solid $css3
+			h2:nth-of-type(4)
+				color: $sass
+				border: 4px solid $sass
+			h2:nth-of-type(5)
+				color: $javascript
+				border: 4px solid $javascript
+			h2:nth-of-type(6)
+				color: $jquery
+				border: 4px solid $jquery
+
+		.learning-container
+			h2:nth-of-type(1)
+				color: $mysql
+				border: 4px solid $mysql
+			h2:nth-of-type(2)
+				color: $node
+				border: 4px solid $node
+			h2:nth-of-type(3)
+				color: $angular
+				border: 4px solid $angular
+
+		.current-container, .learning-container
+			display: block
+
+		.skills
+			display: inline-block
+
+		.learning-container
+			margin-top: 50px
+
+	@media(max-width: 992px)
+		.learning-container
+			width: 80%
+
+@media(max-width: 647px)
+	#learning .learning-container .content h2
+		font-size: 11px
+		color: white!important
+		border-radius: 5px
+	#learning .learning-wrapper .current-container
+		h2:nth-of-type(1)
+			background: $html
+		h2:nth-of-type(2)
+			background: $jade
+		h2:nth-of-type(3)
+			background: $css3
+		h2:nth-of-type(4)
+			background: $sass
+		h2:nth-of-type(5)
+			background: $javascript
+		h2:nth-of-type(6)
+			background: $jquery
+	#learning .learning-wrapper .learning-container
+		h2:nth-of-type(1)
+			background: $mysql
+		h2:nth-of-type(2)
+			background: $node
+		h2:nth-of-type(3)
+			background: $angular
+@media(max-width: 602px)
+	#learning .learning-wrapper .content p
+		margin-bottom: 20px!important
+	#learning .learning-container .content
+		width: 100%
+	#learning .learning-container .content .skills
+		width: 100%
+	#learning .learning-wrapper .content h2
+		margin: 0
+		width: 100%
+		margin-bottom: 10px
+		border-radius: 0
+	#learning .learning-container
+		width: 100%

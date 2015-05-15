@@ -1,0 +1,185 @@
+#portfolio
+	+transition(.5s)
+	overflow: hidden
+
+	#menu-portfolio
+		position: relative
+		top: -74px
+
+	.portfolio-item
+		overflow: hidden
+
+	.portfolio-item img:first-child
+		opacity: 1
+		z-index: 10
+		position: relative
+		transition: opacity .3s
+		-webkit-transition: opacity .3s
+
+	.portfolio-item img:last-child
+		position: absolute
+		z-index: 5
+		left: 0
+		opacity: 1
+
+	.portfolio-item:hover img:first-child
+		opacity: 0
+
+	.portfolio-item:hover img:last-child
+		transform: scale(1.1)
+
+	#portfolio-item-2 img:last-child
+		z-index: 4
+
+
+	.portfolio-container
+		.row2
+			position: relative
+			top: -1px
+			z-index: 100
+		.col-md-3
+			padding: 0
+			background: white
+			img
+				width: 100%
+				background: white
+			@media(max-width: 991px) and (min-width: 600px)
+				width: 50%
+				float: left
+		@media(max-width: 1200px) and (min-width: 992px)
+			.row2
+				position: static
+				float: none
+			.col-md-3
+				width: calc(100% / 3)
+				float: left
+			.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after
+				display: initial
+
+.portfolioItem
+	padding-left: 0
+	padding-right: 0
+	transition: opacity 1s linear
+	opacity: 0
+	width: 100vw
+	z-index: 1001
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	overflow-x: hidden
+	background-color: white
+	overflow-y: scroll
+	-webkit-overflow-scrolling: touch
+
+	-webkit-transition: opacity .5s ease!important
+	transition: opacity .5s ease!important
+	height: 0
+
+	-webkit-transition: transform 1s ease-in
+	transition: transform 1s ease-in
+
+	display: -webkit-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	-webkit-align-items: center
+	justify-content: center
+	-webkit-justify-content: center
+
+	.portfolioWrapper
+		margin-bottom: 70px
+		@media(max-width:767px)
+			width: 90%
+			margin-bottom: 30px!important
+		.portfolioHeader
+			height: 70vh
+			display: -webkit-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			flex-direction: column
+			align-items: center
+			-webkit-align-items: center
+			justify-content: center
+			-webkit-justify-content: center
+
+			img
+				width: 25%
+				display: block
+				margin: auto
+
+	.portfolioClose:nth-child(1)
+		z-index: 1
+		position: absolute
+		top: 25px
+		right: 42px
+		opacity: 1
+		img
+			width: 20px
+
+	.endItem-wrapper
+		background: $dark_gray
+		width: 100%
+		height: 350px
+
+		display: -webkit-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		flex-direction: column
+		align-items: center
+		-webkit-align-items: center
+		justify-content: center
+		-webkit-justify-content: center
+
+		.endItem-container
+			text-align: center
+
+			h4
+				font:
+					size: 50px
+					weight: 400
+				color: white
+				+font("Raleway")
+			p
+				font:
+					size: 20px
+					weight: 400
+					style: italic
+				color: $gray
+				margin-bottom: 30px
+				+font("Raleway")
+			img
+				width: 50px
+
+
+.portfolioClose img:hover
+	transform: rotate(180deg)!important
+	-webkit-transform: rotate(180deg)!important
+	-webkit-transition: transform .3s ease-in!important
+	transition: transform .3s ease-in!important
+	z-index: 100
+
+.portfolioItemOn
+	opacity: 1!important
+	height: initial!important
+	box-shadow: #000 0em 0em 0em
+
+// 1096PX- RESPONSIVE HEADER MODULE
+
+@media(max-width: 1096px)
+	.portfolioItem .portfolioWrapper .portfolioHeader img
+		width: 35%
+		@media(max-width: 700px)
+			width: 50%
+		@media(max-width: 400px)
+			width: 70%
+
+@media(max-width: 767px)
+	.portfolioItem .portfolioWrapper
+		width: 100%
+		margin-bottom: 0 !important

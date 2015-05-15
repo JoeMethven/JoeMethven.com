@@ -1,0 +1,17 @@
+#mobileNavigation
+
+	.close
+		img(src="assets/img/close.png")
+
+	ul.main-navigation
+		li: a(href="#home" onclick="$('#start').animatescroll({scrollSpeed:2000,easing:'easeInQuad'});")
+				| HOME
+				span.sr-only (current)
+		li: a(href="#menu-about" onclick="$('#menu-about').animatescroll({scrollSpeed:2000,easing:'easeInQuad'}); $('#about').addClass('current')")
+				| ABOUT
+		
+		li: a(href="#menu-portfolio" onclick="$('#menu-portfolio').animatescroll({scrollSpeed:2000,easing:'easeInQuad'}); $('#test').addClass('current')")
+				| PORTFOLIO
+
+		li.last: a(href="#menu-contact" onclick="$('#menu-contact').animatescroll({scrollSpeed:2000,easing:'easeInQuad'}); $('#contact').addClass('current')")
+				| CONTACT

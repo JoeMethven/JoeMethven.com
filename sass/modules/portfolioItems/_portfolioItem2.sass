@@ -1,0 +1,188 @@
+#portfolioItem2
+	.portfolioWrapper
+		.portfolioContainer2
+			padding-right: 0
+			padding-left: 0
+			.header
+				border-bottom: 5px solid #FFAB2D
+				height: 500px
+				background: #13A9CB
+
+				display: -webkit-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				flex-direction: row
+				align-items: center
+				-webkit-align-items: center
+				justify-content: center
+				-webkit-justify-content: center
+				img
+					width: 150px
+				h4
+					padding-left: 50px
+					font:
+						size: 40px
+						weight: 400
+					color: white
+					+font("Open Sans")
+
+			.info
+				height: 800px
+				margin-right: 0
+				margin-left: 0
+				
+				.image
+					background: url(../assets/img/booket/background1.png) center top no-repeat
+					background-size: cover
+					height: inherit
+				.content
+					display: -webkit-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					flex-direction: row
+					align-items: center
+					-webkit-align-items: center
+					justify-content: center
+					-webkit-justify-content: center
+
+					background: $light_gray
+					padding-left: 0
+					height: inherit
+
+					p
+						padding: 10%
+						font:
+							size: 14px
+							weight: 400
+						color: $gray
+						+font("Open Sans")
+						margin-bottom: 0
+
+			.logoInfo
+				height: 600px
+				overflow: hidden
+
+				.image
+					height: inherit
+					position: relative
+					right: -5%
+
+					position: relative
+					display: -webkit-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					flex-direction: row
+					align-items: center
+					-webkit-align-items: center
+					justify-content: center
+					-webkit-justify-content: center
+
+					img
+						width: 120%
+				.content
+					p
+						padding: 10%
+						font:
+							size: 14px
+							weight: 400
+						color: $gray
+						+font("Open Sans")
+						margin: 0
+
+					display: -webkit-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					flex-direction: row
+					align-items: center
+					-webkit-align-items: center
+					justify-content: center
+					-webkit-justify-content: center
+
+					height: inherit
+
+			.website
+				padding: 15%
+				background: #21657F
+				img
+					width: inherit
+				@media(max-width: 570px)
+					padding: 0
+			
+			@media(max-width: 1520px)
+				.header
+					text-align: center
+					h4
+						font-size: 30px
+					img
+						width: 120px
+					@media(max-width: 1100px)
+						h4
+							font-size: 24px
+						img
+							width: 100px
+					@media(max-width: 760px)
+						h4
+							font-size: 20px
+						img
+							width: 80px
+					@media(max-width: 610px)
+						flex-direction: column
+						-webkit-flex-direction: column
+						h4
+							font-size: 20px
+							padding-left: 0
+						img
+							width: 100px
+							padding-bottom: 20px
+					@media(max-width: 475px)
+						h4
+							font-size: 17px
+							padding-left: 0
+						img
+							width: 100px
+							padding-bottom: 20px
+
+			@media(max-width: 991px)
+				.row.info
+					height: initial
+					.image
+						height: 400px
+				.logoInfo
+					display: block
+					height: 400px
+
+					.image
+						position: relative
+						left: 50%
+						bottom: 70%
+						opacity: 0.6
+						.imageWrapper
+							position: absolute
+							left: -75%
+							img
+								width: 1200px
+
+						@media(max-width: 745px)
+							bottom: 60%
+							.imageWrapper
+								img
+									width: 1000px
+						@media(max-width: 650px)
+							bottom: 48%
+							.imageWrapper
+								img
+									width: 800px
+						@media(max-width: 400px)
+							bottom: 30%
+							.imageWrapper
+								left: -55%
+								img
+									width: 500px
+		
+		.mockups
+			img
+				width: 100%

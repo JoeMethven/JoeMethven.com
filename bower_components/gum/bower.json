@@ -1,0 +1,25 @@
+{
+  "name": "gum",
+  "version": "0.1.5",
+  "homepage": "https://github.com/bucaran/gum",
+  "authors": [
+    "Jorge Bucaran <jbucaran@me.com>"
+  ],
+  "description": "Write PHP in Jade.",
+  "main": "main.jade",
+  "keywords": [
+    "javascript",
+    "jade",
+    "php",
+    "gum"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "Gruntfile.coffee",
+    "package.json",
+    "samples/",
+    "src/"
+  ]
+}

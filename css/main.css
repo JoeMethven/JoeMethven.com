@@ -1,0 +1,2778 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:700,600,500,400,300,200,100");
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700");
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.start-wrapper {
+  height: 100vh;
+  background: #6051a3;
+  padding-right: 0;
+  padding-left: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+@media(max-device-width: 1100px) {
+  .start-wrapper {
+    height: 92.2vh; } }
+@media(max-device-width: 800px) {
+  .start-wrapper {
+    height: 93vh; } }
+@media(max-device-width: 400px) {
+  .start-wrapper {
+    height: 87vh; } }
+  .start-wrapper .logo {
+    text-align: center; }
+    .start-wrapper .logo img {
+      max-width: 80vw;
+      max-height: 80vh;
+      width: 30vh;
+      margin-left: 10vw;
+      margin-right: 10vw; }
+@media(max-width: 800px) {
+  .start-wrapper .logo img {
+    width: 30vw; } }
+  .start-wrapper .arrow-wrapper {
+    text-align: center;
+    position: absolute;
+    bottom: 5vh;
+    right: 0;
+    left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    cursor: pointer; }
+@media(max-width: 1100px) {
+  .start-wrapper .arrow-wrapper {
+    bottom: 7vh; } }
+@media(max-width: 400px) {
+  .start-wrapper .arrow-wrapper {
+    bottom: 5vh; } }
+    .start-wrapper .arrow-wrapper .ui-effects-wrapper {
+      margin: 0; }
+    .start-wrapper .arrow-wrapper div {
+      margin: 0 auto !important; }
+    .start-wrapper .arrow-wrapper i {
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0 auto;
+      font-size: 50px; }
+@media(max-width: 400px) {
+  .start-wrapper .arrow-wrapper i {
+    font-size: 30px; } }
+#navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: none;
+  z-index: 1000;
+  border-bottom: 1px solid white; }
+@media(max-width: 600px) {
+  #navigation {
+    height: initial !important; } }
+  #navigation .nav {
+    background: #6051a3;
+    margin: 0;
+    text-align: center;
+    height: 75px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center; }
+  #navigation .logo-image {
+    padding: 0; }
+    #navigation .logo-image img {
+      max-height: 50px; }
+  #navigation a {
+    color: white;
+    letter-spacing: 2px;
+    padding: 13px 18px;
+    margin: 0 20px;
+    font-size: 11px;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  #navigation li {
+    width: 156px; }
+  #navigation li a:hover {
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 0px 2px white;
+    color: white !important;
+    background: none !important; }
+  #navigation .main-navigation {
+    display: inline-block;
+    vertical-align: middle; }
+  #navigation .nav > li > a:focus {
+    color: white;
+    background-color: transparent; }
+
+.mobile-navigation {
+  width: 100%;
+  float: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: row-wrap;
+      -ms-flex-flow: row-wrap;
+          flex-flow: row-wrap; }
+  .mobile-navigation .logo {
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
+  .mobile-navigation .dropdown {
+    margin-left: auto; }
+
+#mobileNavigation {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(96, 81, 163, 0.9);
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-justify-content: center;
+  text-align: center; }
+  #mobileNavigation ul.main-navigation {
+    width: inherit;
+    height: inherit;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    text-align: center;
+    padding-left: 0; }
+  #mobileNavigation .close {
+    position: absolute;
+    top: 25px;
+    right: 42px;
+    opacity: 1; }
+    #mobileNavigation .close img {
+      width: 20px; }
+  #mobileNavigation li {
+    list-style: none;
+    margin-bottom: 25px; }
+    #mobileNavigation li a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: 2px;
+      padding: 13px 18px;
+      margin: 0 20px;
+      font-size: 28px;
+      border-radius: 5px;
+      font-weight: 300;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      #mobileNavigation li a:hover {
+        border-radius: 5px;
+        box-shadow: inset 0px 0px 0px 2px white;
+        color: white !important;
+        background: none !important; }
+  #mobileNavigation li.last {
+    margin-bottom: 0; }
+
+.mobileNavigationOn {
+  opacity: 1 !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  visibility: visible !important; }
+
+.navigationMain {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  display: none;
+  visibility: hidden; }
+
+@media(max-width: 1000px) {
+  #navigation {
+    padding: 0;
+    height: 60px; }
+    #navigation img {
+      height: 35px; }
+    #navigation .dropdown .dropdown-menu {
+      left: auto;
+      right: 5%;
+      top: 47px;
+      background-color: #6051a3;
+      border-radius: 0;
+      width: 250px; }
+      #navigation .dropdown .dropdown-menu li {
+        width: 100%; }
+      #navigation .dropdown .dropdown-menu li a {
+        color: white;
+        border: none;
+        border-radius: none;
+        width: 100%;
+        letter-spacing: 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        font-size: 15px;
+        font-weight: 400; }
+      #navigation .dropdown .dropdown-menu li a.current {
+        border-radius: 0;
+        border: none; }
+    #navigation .dropdown a {
+      padding: 0;
+      margin: 0; }
+    #navigation .dropdown .fa {
+      font-size: 25px;
+      text-shadow: inset 5px 10px 3px 3px #6051a3; }
+
+  .main-navigation {
+    display: none;
+    vertical-align: none;
+    text-align: left; }
+    .main-navigation ul li a, .main-navigation ul, .main-navigation ul li, .main-navigation img {
+      display: none; } }
+@media(min-width: 1000px) {
+  .mobile-navigation {
+    display: none; } }
+.current:hover {
+  color: white; }
+
+.current:active {
+  color: white;
+  background: none !important; }
+
+.current {
+  color: #6051a3 !important;
+  border-radius: 5px;
+  background-color: white !important;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background: none;
+  background-color: none; }
+
+#calltoaction-wrapper {
+  height: 700px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-color: #F4F4F4;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-justify-content: center;
+  overflow: hidden; }
+  #calltoaction-wrapper .action-text:first-child {
+    margin-bottom: 30px; }
+@media(max-width: 1229px) {
+  #calltoaction-wrapper .action-text {
+    width: 80%; } }
+@media(max-width: 711px) {
+  #calltoaction-wrapper .action-text {
+    width: 100%; } }
+  #calltoaction-wrapper .button {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    padding: 24px 60px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #76bf77;
+    -webkit-transition: 0.8s;
+    transition: 0.8s; }
+    #calltoaction-wrapper .button h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: white;
+      font-family: "Raleway", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 3px;
+      -webkit-transition: 0.8s;
+      transition: 0.8s; }
+  #calltoaction-wrapper .button:hover {
+    background-color: transparent;
+    box-shadow: 0 0 0 3px #7A7979 inset;
+    text-decoration: none; }
+    #calltoaction-wrapper .button:hover h2 {
+      color: #7A7979; }
+  #calltoaction-wrapper .text strong {
+    font-weight: 600; }
+  #calltoaction-wrapper .text h3, #calltoaction-wrapper .text #about .about-container .text-wrapper p, #about .about-container .text-wrapper #calltoaction-wrapper .text p, #calltoaction-wrapper .text #learning .learning-wrapper .content p, #learning .learning-wrapper .content #calltoaction-wrapper .text p, #calltoaction-wrapper .text #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #calltoaction-wrapper .text h5, #calltoaction-wrapper .text #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #calltoaction-wrapper .text p, #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text h5, #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text p {
+    color: #7A7979;
+    font-weight: 200;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0; }
+    #calltoaction-wrapper .text h3:nth-child(1), #calltoaction-wrapper .text #about .about-container .text-wrapper p:nth-child(1), #about .about-container .text-wrapper #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #learning .learning-wrapper .content p:nth-child(1), #learning .learning-wrapper .content #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details h5:nth-child(1), #contact #contact-wrapper .container .details #calltoaction-wrapper .text h5:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details p:nth-child(1), #contact #contact-wrapper .container .details #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile h5:nth-child(1), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text h5:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile p:nth-child(1), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text p:nth-child(1) {
+      font-size: 2.4em; }
+    #calltoaction-wrapper .text h3:nth-child(2), #calltoaction-wrapper .text #about .about-container .text-wrapper p:nth-child(2), #about .about-container .text-wrapper #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #learning .learning-wrapper .content p:nth-child(2), #learning .learning-wrapper .content #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details h5:nth-child(2), #contact #contact-wrapper .container .details #calltoaction-wrapper .text h5:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details p:nth-child(2), #contact #contact-wrapper .container .details #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile h5:nth-child(2), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text h5:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile p:nth-child(2), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text p:nth-child(2) {
+      margin-top: 20px;
+      font-size: 3em; }
+@media(max-width: 1600px) {
+  #calltoaction-wrapper .text h3:nth-child(1), #calltoaction-wrapper .text #about .about-container .text-wrapper p:nth-child(1), #about .about-container .text-wrapper #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #learning .learning-wrapper .content p:nth-child(1), #learning .learning-wrapper .content #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details h5:nth-child(1), #contact #contact-wrapper .container .details #calltoaction-wrapper .text h5:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details p:nth-child(1), #contact #contact-wrapper .container .details #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile h5:nth-child(1), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text h5:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile p:nth-child(1), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text p:nth-child(1) {
+    font-size: 2.1em; }
+  #calltoaction-wrapper .text h3:nth-child(2), #calltoaction-wrapper .text #about .about-container .text-wrapper p:nth-child(2), #about .about-container .text-wrapper #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #learning .learning-wrapper .content p:nth-child(2), #learning .learning-wrapper .content #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details h5:nth-child(2), #contact #contact-wrapper .container .details #calltoaction-wrapper .text h5:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details p:nth-child(2), #contact #contact-wrapper .container .details #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile h5:nth-child(2), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text h5:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile p:nth-child(2), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text p:nth-child(2) {
+    font-size: 2.6em; } }
+@media(max-width: 1520px) {
+  #calltoaction-wrapper .text h3:nth-child(1), #calltoaction-wrapper .text #about .about-container .text-wrapper p:nth-child(1), #about .about-container .text-wrapper #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #learning .learning-wrapper .content p:nth-child(1), #learning .learning-wrapper .content #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details h5:nth-child(1), #contact #contact-wrapper .container .details #calltoaction-wrapper .text h5:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details p:nth-child(1), #contact #contact-wrapper .container .details #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile h5:nth-child(1), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text h5:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile p:nth-child(1), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text p:nth-child(1) {
+    font-size: 1.9em; }
+  #calltoaction-wrapper .text h3:nth-child(2), #calltoaction-wrapper .text #about .about-container .text-wrapper p:nth-child(2), #about .about-container .text-wrapper #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #learning .learning-wrapper .content p:nth-child(2), #learning .learning-wrapper .content #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details h5:nth-child(2), #contact #contact-wrapper .container .details #calltoaction-wrapper .text h5:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details p:nth-child(2), #contact #contact-wrapper .container .details #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile h5:nth-child(2), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text h5:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile p:nth-child(2), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text p:nth-child(2) {
+    font-size: 2.3em; } }
+@media(max-width: 850px) {
+  #calltoaction-wrapper .text h3:nth-child(1), #calltoaction-wrapper .text #about .about-container .text-wrapper p:nth-child(1), #about .about-container .text-wrapper #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #learning .learning-wrapper .content p:nth-child(1), #learning .learning-wrapper .content #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details h5:nth-child(1), #contact #contact-wrapper .container .details #calltoaction-wrapper .text h5:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details p:nth-child(1), #contact #contact-wrapper .container .details #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile h5:nth-child(1), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text h5:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile p:nth-child(1), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text p:nth-child(1) {
+    font-size: 1.8em; }
+  #calltoaction-wrapper .text h3:nth-child(2), #calltoaction-wrapper .text #about .about-container .text-wrapper p:nth-child(2), #about .about-container .text-wrapper #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #learning .learning-wrapper .content p:nth-child(2), #learning .learning-wrapper .content #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details h5:nth-child(2), #contact #contact-wrapper .container .details #calltoaction-wrapper .text h5:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details p:nth-child(2), #contact #contact-wrapper .container .details #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile h5:nth-child(2), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text h5:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile p:nth-child(2), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text p:nth-child(2) {
+    font-size: 1.5em; } }
+@media(max-width: 452px) {
+  #calltoaction-wrapper .text h3:nth-child(1), #calltoaction-wrapper .text #about .about-container .text-wrapper p:nth-child(1), #about .about-container .text-wrapper #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #learning .learning-wrapper .content p:nth-child(1), #learning .learning-wrapper .content #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details h5:nth-child(1), #contact #contact-wrapper .container .details #calltoaction-wrapper .text h5:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details p:nth-child(1), #contact #contact-wrapper .container .details #calltoaction-wrapper .text p:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile h5:nth-child(1), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text h5:nth-child(1), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile p:nth-child(1), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text p:nth-child(1) {
+    font-size: 1.5em; }
+  #calltoaction-wrapper .text h3:nth-child(2), #calltoaction-wrapper .text #about .about-container .text-wrapper p:nth-child(2), #about .about-container .text-wrapper #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #learning .learning-wrapper .content p:nth-child(2), #learning .learning-wrapper .content #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details h5:nth-child(2), #contact #contact-wrapper .container .details #calltoaction-wrapper .text h5:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details p:nth-child(2), #contact #contact-wrapper .container .details #calltoaction-wrapper .text p:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile h5:nth-child(2), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text h5:nth-child(2), #calltoaction-wrapper .text #contact #contact-wrapper .container .details-mobile p:nth-child(2), #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .text p:nth-child(2) {
+    font-size: 1.2em; } }
+  #calltoaction-wrapper .col-md-6:first-child {
+    margin-right: 5%; }
+  #calltoaction-wrapper .graphic .monitor, #calltoaction-wrapper .graphic .monitor #contents {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: row;
+    position: relative; }
+    #calltoaction-wrapper .graphic .monitor #contents {
+      overflow: hidden;
+      border-radius: 8px;
+      min-width: 580px;
+      min-height: 34vh;
+      background-color: #76bf77;
+      border: 20px solid #353641;
+      border-bottom: 30px solid #353641;
+      min-height: 320px; }
+      #calltoaction-wrapper .graphic .monitor #contents #websites {
+        position: absolute;
+        width: 100%;
+        left: 50%; }
+        #calltoaction-wrapper .graphic .monitor #contents #websites #bad-website {
+          height: 245px;
+          width: 50%;
+          background-color: #f3f3f3;
+          border-radius: 4px;
+          margin-top: 2%;
+          overflow: hidden;
+          position: relative;
+          left: -25%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #bad-website .bad-website-contents #bad-website-element-1 {
+            position: absolute;
+            background-color: #6051a3;
+            height: 50px;
+            width: 100px;
+            top: 4%;
+            left: 4%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #bad-website .bad-website-contents #bad-website-element-2 {
+            position: absolute;
+            background-color: #76bf77;
+            height: 15px;
+            width: 180px;
+            top: 28%;
+            left: 4%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #bad-website .bad-website-contents #bad-website-element-3 .p-bar-1-1, #calltoaction-wrapper .graphic .monitor #contents #websites #bad-website .bad-website-contents #bad-website-element-3 .p-bar-1-2, #calltoaction-wrapper .graphic .monitor #contents #websites #bad-website .bad-website-contents #bad-website-element-3 .p-bar-1-3 {
+            position: absolute;
+            height: 4px;
+            width: 29%;
+            background-color: #6051a3;
+            top: 39%;
+            left: 4%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #bad-website .bad-website-contents #bad-website-element-3 .p-bar-1-2 {
+            top: 43%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #bad-website .bad-website-contents #bad-website-element-3 .p-bar-1-3 {
+            top: 47%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #bad-website .bad-website-contents #bad-website-element-4 {
+            position: absolute;
+            top: 53%;
+            left: 4%;
+            height: 60px;
+            width: 40%;
+            background-color: #cc6767; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #bad-website .bad-website-contents #bad-website-element-5 {
+            position: absolute;
+            top: 53%;
+            left: 46%;
+            height: 60px;
+            width: 40%;
+            background-color: #cc6767; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #bad-website .bad-website-contents #bad-website-element-6 {
+            position: absolute;
+            bottom: 4%;
+            left: 4%;
+            width: 92%;
+            height: 25px;
+            background-color: #76bf77; }
+        #calltoaction-wrapper .graphic .monitor #contents #websites #good-website {
+          z-index: 100;
+          height: 245px;
+          width: 50%;
+          background-color: #f3f3f3;
+          border-radius: 4px;
+          margin-top: 2%;
+          overflow: hidden;
+          position: relative;
+          left: -25%;
+          top: 32vh; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-1 {
+            position: absolute;
+            background-color: #6051a3;
+            height: 24px;
+            width: 27%;
+            top: 7%;
+            left: 7%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-2 {
+            position: absolute;
+            background-color: #6051a3;
+            height: 24px;
+            width: 56%;
+            top: 7%;
+            left: 37%;
+            margin-right: 7%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-3 {
+            position: absolute;
+            width: 100%;
+            height: 55px;
+            background-color: #cc6767;
+            top: 22%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-4 {
+            position: absolute;
+            background-color: #76bf77;
+            height: 10px;
+            width: 60%;
+            top: 50%;
+            left: 7%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-5 .p-bar-1-1, #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-5 .p-bar-1-2, #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-5 .p-bar-1-3 {
+            position: absolute;
+            height: 4px;
+            width: 27.33333%;
+            background-color: #6051a3;
+            top: 57%;
+            left: 7%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-5 .p-bar-1-2 {
+            left: 36.3%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-5 .p-bar-1-3 {
+            right: 7%;
+            left: initial; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-6 .p-bar-2-1, #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-6 .p-bar-2-2, #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-6 .p-bar-2-3 {
+            position: absolute;
+            height: 4px;
+            width: 27.33333%;
+            background-color: #6051a3;
+            left: 7%;
+            top: 61%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-6 .p-bar-2-2 {
+            left: 36.3%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-6 .p-bar-2-3 {
+            right: 7%;
+            left: initial; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-7 .p-bar-3-1, #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-7 .p-bar-3-2, #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-7 .p-bar-3-3 {
+            position: absolute;
+            height: 4px;
+            width: 27.33333%;
+            background-color: #6051a3;
+            left: 7%;
+            top: 65%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-7 .p-bar-3-2 {
+            left: 36.3%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-7 .p-bar-3-3 {
+            right: 7%;
+            left: initial; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-8 {
+            position: absolute;
+            left: 7%;
+            height: 42px;
+            width: 40%;
+            background-color: #cc6767;
+            top: 71%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-9 {
+            position: absolute;
+            left: 52%;
+            background-color: #76bf77;
+            height: 10px;
+            width: 34%;
+            top: 71%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-10 .p-bar-4-1, #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-10 .p-bar-4-2, #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-10 .p-bar-4-3 {
+            position: absolute;
+            background-color: #6051a3;
+            height: 4px;
+            width: 27.33333%;
+            top: 77.5%;
+            left: 52%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-10 .p-bar-4-2 {
+            top: 81.5%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-10 .p-bar-4-3 {
+            top: 85%; }
+          #calltoaction-wrapper .graphic .monitor #contents #websites #good-website .good-website-contents #good-website-element-11 {
+            position: absolute;
+            bottom: 6%;
+            background-color: #76bf77;
+            left: 7%;
+            width: 86%;
+            height: 5px; }
+      #calltoaction-wrapper .graphic .monitor #contents .icon {
+        position: absolute;
+        left: 50%;
+        bottom: -20px; }
+        #calltoaction-wrapper .graphic .monitor #contents .icon .icon-contents {
+          position: relative;
+          left: -50%;
+          background-color: #e1e1e1;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%; }
+  #calltoaction-wrapper .graphic .stand {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+@media(max-width: 1520px) {
+  #calltoaction-wrapper .graphic .monitor #contents {
+    min-width: 480px;
+    min-height: 280px;
+    border: 10px solid #353641;
+    border-bottom: 20px solid #353641; }
+
+  #calltoaction-wrapper .stand img {
+    height: 70px; } }
+@media(max-width: 1400px) {
+  #calltoaction-wrapper .action-text h3, #calltoaction-wrapper .action-text #about .about-container .text-wrapper p, #about .about-container .text-wrapper #calltoaction-wrapper .action-text p, #calltoaction-wrapper .action-text #learning .learning-wrapper .content p, #learning .learning-wrapper .content #calltoaction-wrapper .action-text p, #calltoaction-wrapper .action-text #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #calltoaction-wrapper .action-text h5, #calltoaction-wrapper .action-text #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #calltoaction-wrapper .action-text p, #calltoaction-wrapper .action-text #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .action-text h5, #calltoaction-wrapper .action-text #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .action-text p {
+    font-size: 1.3em; }
+  #calltoaction-wrapper .action-button a h2 {
+    font-size: 14px; } }
+@media(max-width: 1230px) {
+  #calltoaction-wrapper {
+    height: 850px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    #calltoaction-wrapper .text {
+      padding-right: 0; }
+    #calltoaction-wrapper .action-content-wrapper {
+      margin-top: 40px;
+      width: initial;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-direction: column;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-justify-content: center; }
+      #calltoaction-wrapper .action-content-wrapper h3.last, #calltoaction-wrapper .action-content-wrapper #about .about-container .text-wrapper p.last, #about .about-container .text-wrapper #calltoaction-wrapper .action-content-wrapper p.last, #calltoaction-wrapper .action-content-wrapper #learning .learning-wrapper .content p.last, #learning .learning-wrapper .content #calltoaction-wrapper .action-content-wrapper p.last, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details h5.last, #contact #contact-wrapper .container .details #calltoaction-wrapper .action-content-wrapper h5.last, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details p.last, #contact #contact-wrapper .container .details #calltoaction-wrapper .action-content-wrapper p.last, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details-mobile h5.last, #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .action-content-wrapper h5.last, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details-mobile p.last, #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .action-content-wrapper p.last {
+        margin-top: 0 !important; }
+  @media(max-width: 863px) {
+    #calltoaction-wrapper .action-content-wrapper h3.last, #calltoaction-wrapper .action-content-wrapper #about .about-container .text-wrapper p.last, #about .about-container .text-wrapper #calltoaction-wrapper .action-content-wrapper p.last, #calltoaction-wrapper .action-content-wrapper #learning .learning-wrapper .content p.last, #learning .learning-wrapper .content #calltoaction-wrapper .action-content-wrapper p.last, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details h5.last, #contact #contact-wrapper .container .details #calltoaction-wrapper .action-content-wrapper h5.last, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details p.last, #contact #contact-wrapper .container .details #calltoaction-wrapper .action-content-wrapper p.last, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details-mobile h5.last, #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .action-content-wrapper h5.last, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details-mobile p.last, #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .action-content-wrapper p.last {
+      margin-top: 10px !important; } }
+      #calltoaction-wrapper .action-content-wrapper h3, #calltoaction-wrapper .action-content-wrapper #about .about-container .text-wrapper p, #about .about-container .text-wrapper #calltoaction-wrapper .action-content-wrapper p, #calltoaction-wrapper .action-content-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #calltoaction-wrapper .action-content-wrapper p, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #calltoaction-wrapper .action-content-wrapper h5, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #calltoaction-wrapper .action-content-wrapper p, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .action-content-wrapper h5, #calltoaction-wrapper .action-content-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #calltoaction-wrapper .action-content-wrapper p {
+        text-align: center; } }
+#social-bar {
+  height: 150px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-justify-content: space-around; }
+  #social-bar a img {
+    height: 50px;
+    width: auto; }
+@media(max-width: 991px) {
+  #social-bar a img {
+    height: 40px; } }
+@media(max-width: 468px) {
+  #social-bar a img {
+    height: 34px; } }
+  #social-bar a img:hover {
+    transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    box-shadow: #000 0em 0em 0em;
+    opacity: 0.4;
+    -webkit-transition: 0.8s;
+    transition: 0.8s; }
+
+#footer-wrapper {
+  height: 100px;
+  background: #0F0F11;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-justify-content: space-around; }
+  #footer-wrapper .left p {
+    margin-bottom: 0;
+    color: #F4F4F4;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 12px; }
+    #footer-wrapper .left p a {
+      color: #76bf77; }
+  #footer-wrapper .middle {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
+    #footer-wrapper .middle img {
+      width: 50px;
+      height: auto; }
+  #footer-wrapper .right img {
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+    -webkit-transition: ".8s ease-in";
+    transition: ".8s ease-in"; }
+  #footer-wrapper .right a:nth-child(4) img {
+    width: 36px; }
+  #footer-wrapper .right img:hover {
+    transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    box-shadow: #000 0em 0em 0em;
+    opacity: 0.6; }
+@media(max-width: 840px) {
+  #footer-wrapper .middle {
+    display: none;
+    visibility: hidden; } }
+@media(max-width: 640px) {
+  #footer-wrapper .right a:nth-child(4) img {
+    width: 26px; }
+  #footer-wrapper .right img {
+    width: 20px; }
+  @media(max-width: 505px) {
+    #footer-wrapper .right img {
+      margin-right: 10px; } } }
+@media(max-width: 438px) {
+  #footer-wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 140px;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    #footer-wrapper .left {
+      margin-bottom: 20px;
+      text-align: center; } }
+::-webkit-scrollbar {
+  display: none;
+  visibility: hidden; }
+
+#home, #about, #portfolio, #contact {
+  padding: 0;
+  background: white; }
+  #home .heading-home, #home .heading-about, #home .heading-portfolio, #home .heading-contact, #about .heading-home, #about .heading-about, #about .heading-portfolio, #about .heading-contact, #portfolio .heading-home, #portfolio .heading-about, #portfolio .heading-portfolio, #portfolio .heading-contact, #contact .heading-home, #contact .heading-about, #contact .heading-portfolio, #contact .heading-contact {
+    padding: 24px 0;
+    background: #6051a3;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white; }
+    #home .heading-home h3, #home .heading-home #about .about-container .text-wrapper p, #about .about-container .text-wrapper #home .heading-home p, #home .heading-home #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .heading-home p, #home .heading-home #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .heading-home h5, #home .heading-home #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .heading-home p, #home .heading-home #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .heading-home h5, #home .heading-home #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .heading-home p, #home .heading-about h3, #home .heading-about #about .about-container .text-wrapper p, #about .about-container .text-wrapper #home .heading-about p, #home .heading-about #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .heading-about p, #home .heading-about #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .heading-about h5, #home .heading-about #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .heading-about p, #home .heading-about #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .heading-about h5, #home .heading-about #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .heading-about p, #home .heading-portfolio h3, #home .heading-portfolio #about .about-container .text-wrapper p, #about .about-container .text-wrapper #home .heading-portfolio p, #home .heading-portfolio #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .heading-portfolio p, #home .heading-portfolio #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .heading-portfolio h5, #home .heading-portfolio #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .heading-portfolio p, #home .heading-portfolio #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .heading-portfolio h5, #home .heading-portfolio #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .heading-portfolio p, #home .heading-contact h3, #home .heading-contact #about .about-container .text-wrapper p, #about .about-container .text-wrapper #home .heading-contact p, #home .heading-contact #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .heading-contact p, #home .heading-contact #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .heading-contact h5, #home .heading-contact #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .heading-contact p, #home .heading-contact #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .heading-contact h5, #home .heading-contact #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .heading-contact p, #about .heading-home h3, #about .heading-home .about-container .text-wrapper p, #about .about-container .text-wrapper .heading-home p, #about .heading-home #learning .learning-wrapper .content p, #learning .learning-wrapper .content #about .heading-home p, #about .heading-home #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .heading-home h5, #about .heading-home #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .heading-home p, #about .heading-home #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .heading-home h5, #about .heading-home #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .heading-home p, #about .heading-about h3, #about .heading-about .about-container .text-wrapper p, #about .about-container .text-wrapper .heading-about p, #about .heading-about #learning .learning-wrapper .content p, #learning .learning-wrapper .content #about .heading-about p, #about .heading-about #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .heading-about h5, #about .heading-about #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .heading-about p, #about .heading-about #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .heading-about h5, #about .heading-about #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .heading-about p, #about .heading-portfolio h3, #about .heading-portfolio .about-container .text-wrapper p, #about .about-container .text-wrapper .heading-portfolio p, #about .heading-portfolio #learning .learning-wrapper .content p, #learning .learning-wrapper .content #about .heading-portfolio p, #about .heading-portfolio #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .heading-portfolio h5, #about .heading-portfolio #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .heading-portfolio p, #about .heading-portfolio #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .heading-portfolio h5, #about .heading-portfolio #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .heading-portfolio p, #about .heading-contact h3, #about .heading-contact .about-container .text-wrapper p, #about .about-container .text-wrapper .heading-contact p, #about .heading-contact #learning .learning-wrapper .content p, #learning .learning-wrapper .content #about .heading-contact p, #about .heading-contact #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .heading-contact h5, #about .heading-contact #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .heading-contact p, #about .heading-contact #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .heading-contact h5, #about .heading-contact #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .heading-contact p, #portfolio .heading-home h3, #portfolio .heading-home #about .about-container .text-wrapper p, #about .about-container .text-wrapper #portfolio .heading-home p, #portfolio .heading-home #learning .learning-wrapper .content p, #learning .learning-wrapper .content #portfolio .heading-home p, #portfolio .heading-home #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #portfolio .heading-home h5, #portfolio .heading-home #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #portfolio .heading-home p, #portfolio .heading-home #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #portfolio .heading-home h5, #portfolio .heading-home #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #portfolio .heading-home p, #portfolio .heading-about h3, #portfolio .heading-about #about .about-container .text-wrapper p, #about .about-container .text-wrapper #portfolio .heading-about p, #portfolio .heading-about #learning .learning-wrapper .content p, #learning .learning-wrapper .content #portfolio .heading-about p, #portfolio .heading-about #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #portfolio .heading-about h5, #portfolio .heading-about #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #portfolio .heading-about p, #portfolio .heading-about #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #portfolio .heading-about h5, #portfolio .heading-about #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #portfolio .heading-about p, #portfolio .heading-portfolio h3, #portfolio .heading-portfolio #about .about-container .text-wrapper p, #about .about-container .text-wrapper #portfolio .heading-portfolio p, #portfolio .heading-portfolio #learning .learning-wrapper .content p, #learning .learning-wrapper .content #portfolio .heading-portfolio p, #portfolio .heading-portfolio #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #portfolio .heading-portfolio h5, #portfolio .heading-portfolio #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #portfolio .heading-portfolio p, #portfolio .heading-portfolio #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #portfolio .heading-portfolio h5, #portfolio .heading-portfolio #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #portfolio .heading-portfolio p, #portfolio .heading-contact h3, #portfolio .heading-contact #about .about-container .text-wrapper p, #about .about-container .text-wrapper #portfolio .heading-contact p, #portfolio .heading-contact #learning .learning-wrapper .content p, #learning .learning-wrapper .content #portfolio .heading-contact p, #portfolio .heading-contact #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #portfolio .heading-contact h5, #portfolio .heading-contact #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #portfolio .heading-contact p, #portfolio .heading-contact #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #portfolio .heading-contact h5, #portfolio .heading-contact #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #portfolio .heading-contact p, #contact .heading-home h3, #contact .heading-home #about .about-container .text-wrapper p, #about .about-container .text-wrapper #contact .heading-home p, #contact .heading-home #learning .learning-wrapper .content p, #learning .learning-wrapper .content #contact .heading-home p, #contact .heading-home #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details .heading-home h5, #contact .heading-home #contact-wrapper .container .details p, #contact #contact-wrapper .container .details .heading-home p, #contact .heading-home #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile .heading-home h5, #contact .heading-home #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile .heading-home p, #contact .heading-about h3, #contact .heading-about #about .about-container .text-wrapper p, #about .about-container .text-wrapper #contact .heading-about p, #contact .heading-about #learning .learning-wrapper .content p, #learning .learning-wrapper .content #contact .heading-about p, #contact .heading-about #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details .heading-about h5, #contact .heading-about #contact-wrapper .container .details p, #contact #contact-wrapper .container .details .heading-about p, #contact .heading-about #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile .heading-about h5, #contact .heading-about #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile .heading-about p, #contact .heading-portfolio h3, #contact .heading-portfolio #about .about-container .text-wrapper p, #about .about-container .text-wrapper #contact .heading-portfolio p, #contact .heading-portfolio #learning .learning-wrapper .content p, #learning .learning-wrapper .content #contact .heading-portfolio p, #contact .heading-portfolio #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details .heading-portfolio h5, #contact .heading-portfolio #contact-wrapper .container .details p, #contact #contact-wrapper .container .details .heading-portfolio p, #contact .heading-portfolio #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile .heading-portfolio h5, #contact .heading-portfolio #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile .heading-portfolio p, #contact .heading-contact h3, #contact .heading-contact #about .about-container .text-wrapper p, #about .about-container .text-wrapper #contact .heading-contact p, #contact .heading-contact #learning .learning-wrapper .content p, #learning .learning-wrapper .content #contact .heading-contact p, #contact .heading-contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details .heading-contact h5, #contact .heading-contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details .heading-contact p, #contact .heading-contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile .heading-contact h5, #contact .heading-contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile .heading-contact p {
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 0;
+      font-family: "Raleway", Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      border: 2px solid white;
+      float: left; }
+
+#home {
+  height: 100vh;
+  position: relative;
+  border-bottom: 1px solid #E2E2E2;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-align-items: center;
+  overflow: hidden; }
+  #home .triangle-container {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-right: 0;
+    width: 100vh;
+    height: 100vh; }
+@media(max-width: 1200px) {
+  #home .triangle-container {
+    width: 90vh; } }
+@media(max-width: 1080px) {
+  #home .triangle-container {
+    width: 80vh; } }
+  #home .triangle, #home .triangle img {
+    height: 100%; }
+  #home .triangle img {
+    position: relative;
+    right: 600px; }
+  #home .triangle {
+    overflow: hidden;
+    position: absolute;
+    height: 100vh;
+    left: 7px;
+    -webkit-transform: skewX(45deg);
+        -ms-transform: skewX(45deg);
+            transform: skewX(45deg); }
+  #home .triangle:first-child {
+    -webkit-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+            transform-origin: 100% 0; }
+  #home .triangle img, #home .triangle:after {
+    -webkit-transform: skewX(-45deg);
+        -ms-transform: skewX(-45deg);
+            transform: skewX(-45deg);
+    -webkit-transform-origin: inherit;
+        -ms-transform-origin: inherit;
+            transform-origin: inherit; }
+  #home .text-wrapper {
+    margin-left: 20%; }
+@media(max-width:1560px) {
+  #home .text-wrapper {
+    margin-left: 15%; } }
+@media(max-width: 1320px) {
+  #home .text-wrapper {
+    margin-left: 10%; } }
+    #home .text-wrapper h1, #home .text-wrapper h3, #home #about .about-container .text-wrapper p, #about .about-container #home .text-wrapper p, #home .text-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .text-wrapper p {
+      font-family: "Lato", Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 60px;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-transform: uppercase; }
+    #home .text-wrapper h3, #home #about .about-container .text-wrapper p, #about .about-container #home .text-wrapper p, #home .text-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .text-wrapper p {
+      font-weight: 400;
+      font-size: 40px; }
+@media(max-width: 400px) {
+  #home .text-wrapper h1, #home .text-wrapper h3, #home #about .about-container .text-wrapper p, #about .about-container #home .text-wrapper p, #home .text-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .text-wrapper p {
+    font-size: 36px; }
+  #home .text-wrapper h3, #home #about .about-container .text-wrapper p, #about .about-container #home .text-wrapper p, #home .text-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .text-wrapper p {
+    font-size: 20px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      #home .text-wrapper h1, #home .text-wrapper h3, #home #about .about-container .text-wrapper p, #about .about-container #home .text-wrapper p, #home .text-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .text-wrapper p {
+        font-size: 36px !important; }
+      #home .text-wrapper h3, #home #about .about-container .text-wrapper p, #about .about-container #home .text-wrapper p, #home .text-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .text-wrapper p {
+        font-size: 20px !important; } }
+
+@media(max-width: 999px) {
+  #home {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center;
+    background: url(../assets/img/desk_illustration.png) no-repeat center right fixed;
+    background-size: cover;
+    -webkit-background-size: cover; }
+    #home .triangle-container {
+      display: none; }
+    #home .text-wrapper {
+      margin-left: 0;
+      color: white;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-align-items: center; }
+      #home .text-wrapper h3, #home #about .about-container .text-wrapper p, #about .about-container #home .text-wrapper p, #home .text-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .text-wrapper p {
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center; }
+  @media(max-width: 644px) {
+    #home .text-wrapper h1, #home .text-wrapper h3, #home #about .about-container .text-wrapper p, #about .about-container #home .text-wrapper p, #home .text-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .text-wrapper p {
+      font-size: 50px; }
+    #home .text-wrapper h3, #home #about .about-container .text-wrapper p, #about .about-container #home .text-wrapper p, #home .text-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .text-wrapper p {
+      font-size: 25px; } }
+  @media(max-width: 400px) {
+    #home .text-wrapper h1, #home .text-wrapper h3, #home #about .about-container .text-wrapper p, #about .about-container #home .text-wrapper p, #home .text-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .text-wrapper p {
+      font-size: 45px; }
+    #home .text-wrapper h3, #home #about .about-container .text-wrapper p, #about .about-container #home .text-wrapper p, #home .text-wrapper #learning .learning-wrapper .content p, #learning .learning-wrapper .content #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #home .text-wrapper p, #home .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #home .text-wrapper h5, #home .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #home .text-wrapper p {
+      font-size: 20px; } }
+  @media(max-width: 800px) {
+    #home {
+      background: url(../assets/img/desk_illustration.png) no-repeat center right scroll;
+      background-size: cover;
+      -webkit-background-size: cover; } } }
+#about .stages-wrapper {
+  width: 100%;
+  margin: 0; }
+  #about .stages-wrapper .stage-1, #about .stages-wrapper .stage-2, #about .stages-wrapper .stage-3 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    height: 600px;
+    padding: 0; }
+    #about .stages-wrapper .stage-1 .content i, #about .stages-wrapper .stage-2 .content i, #about .stages-wrapper .stage-3 .content i {
+      color: #6051a3;
+      font-size: 90px;
+      padding-bottom: 10px; }
+    #about .stages-wrapper .stage-1 .content h3, #about .stages-wrapper .stage-1 .content .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-1 #learning .learning-wrapper .content p, #learning .learning-wrapper #about .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-1 .content h5, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-1 .content h5, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-2 .content h3, #about .stages-wrapper .stage-2 .content .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-2 #learning .learning-wrapper .content p, #learning .learning-wrapper #about .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-2 .content h5, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-2 .content h5, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-3 .content h3, #about .stages-wrapper .stage-3 .content .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-3 .content p, #about .stages-wrapper .stage-3 #learning .learning-wrapper .content p, #learning .learning-wrapper #about .stages-wrapper .stage-3 .content p, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-3 .content h5, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-3 .content p, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-3 .content h5, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-3 .content p {
+      color: white;
+      font-size: 34px;
+      font-family: "Raleway", Helvetica, Arial, sans-serif;
+      font-weight: 600; }
+  #about .stages-wrapper .stage-1 {
+    background: url(../assets/img/stage1.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative; }
+  #about .stages-wrapper .overlay {
+    z-index: 100;
+    display: none;
+    background-color: #6051a3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 25px 40px;
+    font-family: "Lato", Helvetica, Arial, sans-serif; }
+    #about .stages-wrapper .overlay h2 {
+      font-weight: 500;
+      color: white;
+      font-size: 24px;
+      padding-bottom: 25px; }
+    #about .stages-wrapper .overlay h3, #about .stages-wrapper .overlay .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .overlay p, #about .stages-wrapper .overlay #learning .learning-wrapper .content p, #learning .learning-wrapper .content #about .stages-wrapper .overlay p, #about .stages-wrapper .overlay #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .overlay h5, #about .stages-wrapper .overlay #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .overlay p, #about .stages-wrapper .overlay #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .overlay h5, #about .stages-wrapper .overlay #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .overlay p {
+      font-weight: 400;
+      color: #76bf77;
+      letter-spacing: 1px;
+      font-size: 17px; }
+    #about .stages-wrapper .overlay p {
+      color: white;
+      font-weight: 300; }
+    #about .stages-wrapper .overlay .line {
+      width: 100%;
+      height: 2px;
+      background-color: white; }
+    #about .stages-wrapper .overlay .toph {
+      margin-top: 35px; }
+  #about .stages-wrapper .stage-2 {
+    background: url(../assets/img/stage2.jpg) center no-repeat;
+    background-size: cover; }
+  #about .stages-wrapper .stage-3 {
+    background: url(../assets/img/stage3.jpg) center no-repeat;
+    background-size: cover; }
+
+@media(max-width: 1690px) {
+  #about .stages-wrapper .stage-1, #about .stages-wrapper .stage-2, #about .stages-wrapper .stage-3 {
+    height: 500px; }
+  @media(max-width: 1400px) {
+    #about .stages-wrapper .stage-1, #about .stages-wrapper .stage-2, #about .stages-wrapper .stage-3 {
+      height: 400px; }
+      #about .stages-wrapper .stage-1 .overlay h2, #about .stages-wrapper .stage-2 .overlay h2, #about .stages-wrapper .stage-3 .overlay h2 {
+        font-size: 20px; }
+      #about .stages-wrapper .stage-1 .overlay h3, #about .stages-wrapper .stage-1 .overlay .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-1 .overlay p, #about .stages-wrapper .stage-1 .overlay #learning .learning-wrapper .content p, #learning .learning-wrapper .content #about .stages-wrapper .stage-1 .overlay p, #about .stages-wrapper .stage-1 .overlay #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-1 .overlay h5, #about .stages-wrapper .stage-1 .overlay #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-1 .overlay p, #about .stages-wrapper .stage-1 .overlay #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-1 .overlay h5, #about .stages-wrapper .stage-1 .overlay #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-1 .overlay p, #about .stages-wrapper .stage-2 .overlay h3, #about .stages-wrapper .stage-2 .overlay .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-2 .overlay p, #about .stages-wrapper .stage-2 .overlay #learning .learning-wrapper .content p, #learning .learning-wrapper .content #about .stages-wrapper .stage-2 .overlay p, #about .stages-wrapper .stage-2 .overlay #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-2 .overlay h5, #about .stages-wrapper .stage-2 .overlay #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-2 .overlay p, #about .stages-wrapper .stage-2 .overlay #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-2 .overlay h5, #about .stages-wrapper .stage-2 .overlay #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-2 .overlay p, #about .stages-wrapper .stage-3 .overlay h3, #about .stages-wrapper .stage-3 .overlay .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-3 .overlay p, #about .stages-wrapper .stage-3 .overlay #learning .learning-wrapper .content p, #learning .learning-wrapper .content #about .stages-wrapper .stage-3 .overlay p, #about .stages-wrapper .stage-3 .overlay #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-3 .overlay h5, #about .stages-wrapper .stage-3 .overlay #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-3 .overlay p, #about .stages-wrapper .stage-3 .overlay #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-3 .overlay h5, #about .stages-wrapper .stage-3 .overlay #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-3 .overlay p {
+        font-size: 15px; }
+      #about .stages-wrapper .stage-1 .overlay p, #about .stages-wrapper .stage-2 .overlay p, #about .stages-wrapper .stage-3 .overlay p {
+        font-size: 12px; } }
+  @media(max-width: 1150px) {
+    #about .stages-wrapper .stage-1 .content i, #about .stages-wrapper .stage-2 .content i, #about .stages-wrapper .stage-3 .content i {
+      font-size: 70px; }
+    #about .stages-wrapper .stage-1 h3, #about .stages-wrapper .stage-1 .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-1 p, #about .stages-wrapper .stage-1 #learning .learning-wrapper .content p, #learning .learning-wrapper .content #about .stages-wrapper .stage-1 p, #about .stages-wrapper .stage-1 #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-1 h5, #about .stages-wrapper .stage-1 #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-1 p, #about .stages-wrapper .stage-1 #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-1 h5, #about .stages-wrapper .stage-1 #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-1 p, #about .stages-wrapper .stage-2 h3, #about .stages-wrapper .stage-2 .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-2 p, #about .stages-wrapper .stage-2 #learning .learning-wrapper .content p, #learning .learning-wrapper .content #about .stages-wrapper .stage-2 p, #about .stages-wrapper .stage-2 #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-2 h5, #about .stages-wrapper .stage-2 #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-2 p, #about .stages-wrapper .stage-2 #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-2 h5, #about .stages-wrapper .stage-2 #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-2 p, #about .stages-wrapper .stage-3 h3, #about .stages-wrapper .stage-3 .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-3 p, #about .stages-wrapper .stage-3 #learning .learning-wrapper .content p, #learning .learning-wrapper .content #about .stages-wrapper .stage-3 p, #about .stages-wrapper .stage-3 #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-3 h5, #about .stages-wrapper .stage-3 #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-3 p, #about .stages-wrapper .stage-3 #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-3 h5, #about .stages-wrapper .stage-3 #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-3 p {
+      font-size: 30px; } }
+  @media(max-width: 465px) {
+    #about .stages-wrapper .stage-1, #about .stages-wrapper .stage-2, #about .stages-wrapper .stage-3 {
+      height: 450px; } }
+  @media(max-width: 380px) {
+    #about .stages-wrapper .stage-1, #about .stages-wrapper .stage-2, #about .stages-wrapper .stage-3 {
+      height: 470px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      #about .stages-wrapper .stage-1, #about .stages-wrapper .stage-2, #about .stages-wrapper .stage-3 {
+        height: 520px; } } }
+#about {
+  background-color: white; }
+  #about #menu-about {
+    position: relative;
+    top: -74px; }
+  #about .about-container {
+    height: 700px;
+    width: 840px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center; }
+@media(max-width: 1070px) {
+  #about .about-container .about-wrapper .row .image-wrapper img {
+    height: 200px; }
+  #about .about-container .about-wrapper .row .text-wrapper p, #about .about-container .about-wrapper .row .text-wrapper h3, #about .about-container .about-wrapper .row .text-wrapper p, #about .about-container .about-wrapper .row .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .about-container .about-wrapper .row .text-wrapper h5, #about .about-container .about-wrapper .row .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .about-container .about-wrapper .row .text-wrapper p, #about .about-container .about-wrapper .row .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .about-container .about-wrapper .row .text-wrapper h5, #about .about-container .about-wrapper .row .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .about-container .about-wrapper .row .text-wrapper p {
+    font-size: 13px;
+    line-height: 18px; } }
+@media(max-width: 880px) {
+  #about .about-container {
+    width: 100vw; }
+    #about .about-container .about-wrapper .row {
+      display: block; }
+    #about .about-container .about-wrapper .image-wrapper {
+      margin-bottom: 30px;
+      width: 100%; }
+      #about .about-container .about-wrapper .image-wrapper img {
+        height: 250px; }
+    #about .about-container .about-wrapper .text-wrapper {
+      width: 60%;
+      margin: auto; } }
+@media(max-width: 558px) {
+  #about .about-container {
+    height: 900px; }
+    #about .about-container .about-wrapper .text-wrapper {
+      width: 80%; } }
+    #about .about-container .row {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-line-pack: center;
+      -webkit-align-content: center;
+              align-content: center;
+      -ms-flex-item-align: center;
+      -webkit-align-self: center;
+              align-self: center;
+      -webkit-align-content: center; }
+    #about .about-container .image-wrapper {
+      width: 35%;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-line-pack: center;
+      -webkit-align-content: center;
+              align-content: center;
+      -ms-flex-item-align: center;
+      -webkit-align-self: center;
+              align-self: center;
+      -webkit-align-content: center; }
+      #about .about-container .image-wrapper img {
+        height: 250px; }
+    #about .about-container .text-wrapper {
+      vertical-align: top;
+      width: 65%; }
+      #about .about-container .text-wrapper h3, #about .about-container .text-wrapper p, #about .about-container .text-wrapper #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .about-container .text-wrapper h5, #about .about-container .text-wrapper #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .about-container .text-wrapper p, #about .about-container .text-wrapper #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .about-container .text-wrapper h5, #about .about-container .text-wrapper #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .about-container .text-wrapper p {
+        display: inline-block;
+        margin-top: 0;
+        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24.89px;
+        color: #1c1c1f; }
+      #about .about-container .text-wrapper p {
+        font-weight: 400;
+        color: #1c1c1f; }
+      #about .about-container .text-wrapper .first {
+        margin-bottom: 25px; }
+      #about .about-container .text-wrapper a {
+        text-decoration: none;
+        color: #76bf77;
+        -webkit-transition: 0.8s;
+        transition: 0.8s; }
+      #about .about-container .text-wrapper a:hover {
+        color: #6051a3; }
+
+#portfolio {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden; }
+  #portfolio #menu-portfolio {
+    position: relative;
+    top: -74px; }
+  #portfolio .portfolio-item {
+    overflow: hidden; }
+  #portfolio .portfolio-item img:first-child {
+    opacity: 1;
+    z-index: 10;
+    position: relative;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s; }
+  #portfolio .portfolio-item img:last-child {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    opacity: 1; }
+  #portfolio .portfolio-item:hover img:first-child {
+    opacity: 0; }
+  #portfolio .portfolio-item:hover img:last-child {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+  #portfolio #portfolio-item-2 img:last-child {
+    z-index: 4; }
+  #portfolio .portfolio-container .row2 {
+    position: relative;
+    top: -1px;
+    z-index: 100; }
+  #portfolio .portfolio-container .col-md-3 {
+    padding: 0;
+    background: white; }
+    #portfolio .portfolio-container .col-md-3 img {
+      width: 100%;
+      background: white; }
+@media(max-width: 991px) and (min-width: 600px) {
+  #portfolio .portfolio-container .col-md-3 {
+    width: 50%;
+    float: left; } }
+@media(max-width: 1200px) and (min-width: 992px) {
+  #portfolio .portfolio-container .row2 {
+    position: static;
+    float: none; }
+  #portfolio .portfolio-container .col-md-3 {
+    width: calc(100% / 3);
+    float: left; }
+  #portfolio .portfolio-container .clearfix:before, #portfolio .portfolio-container .clearfix:after, #portfolio .portfolio-container .dl-horizontal dd:before, #portfolio .portfolio-container .dl-horizontal dd:after, #portfolio .portfolio-container .container:before, #portfolio .portfolio-container .container:after, #portfolio .portfolio-container .container-fluid:before, #portfolio .portfolio-container .container-fluid:after, #portfolio .portfolio-container .row:before, #portfolio .portfolio-container .row:after, #portfolio .portfolio-container .form-horizontal .form-group:before, #portfolio .portfolio-container .form-horizontal .form-group:after, #portfolio .portfolio-container .btn-toolbar:before, #portfolio .portfolio-container .btn-toolbar:after, #portfolio .portfolio-container .btn-group-vertical > .btn-group:before, #portfolio .portfolio-container .btn-group-vertical > .btn-group:after, #portfolio .portfolio-container .nav:before, #portfolio .portfolio-container .nav:after, #portfolio .portfolio-container .navbar:before, #portfolio .portfolio-container .navbar:after, #portfolio .portfolio-container .navbar-header:before, #portfolio .portfolio-container .navbar-header:after, #portfolio .portfolio-container .navbar-collapse:before, #portfolio .portfolio-container .navbar-collapse:after, #portfolio .portfolio-container .pager:before, #portfolio .portfolio-container .pager:after, #portfolio .portfolio-container .panel-body:before, #portfolio .portfolio-container .panel-body:after, #portfolio .portfolio-container .modal-footer:before, #portfolio .portfolio-container .modal-footer:after {
+    display: initial; } }
+.portfolioItem {
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-transition: opacity 1s linear;
+          transition: opacity 1s linear;
+  opacity: 0;
+  width: 100vw;
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-color: white;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition: opacity 0.5s ease !important;
+  transition: opacity 0.5s ease !important;
+  height: 0;
+  -webkit-transition: -webkit-transform 1s ease-in;
+  transition: transform 1s ease-in;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-justify-content: center; }
+  .portfolioItem .portfolioWrapper {
+    margin-bottom: 70px; }
+@media(max-width:767px) {
+  .portfolioItem .portfolioWrapper {
+    width: 90%;
+    margin-bottom: 30px !important; } }
+    .portfolioItem .portfolioWrapper .portfolioHeader {
+      height: 70vh;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      .portfolioItem .portfolioWrapper .portfolioHeader img {
+        width: 25%;
+        display: block;
+        margin: auto; }
+  .portfolioItem .portfolioClose:nth-child(1) {
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    right: 42px;
+    opacity: 1; }
+    .portfolioItem .portfolioClose:nth-child(1) img {
+      width: 20px; }
+  .portfolioItem .endItem-wrapper {
+    background: #1c1c1f;
+    width: 100%;
+    height: 350px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center; }
+    .portfolioItem .endItem-wrapper .endItem-container {
+      text-align: center; }
+      .portfolioItem .endItem-wrapper .endItem-container h4 {
+        font-size: 50px;
+        font-weight: 400;
+        color: white;
+        font-family: "Raleway", Helvetica, Arial, sans-serif; }
+      .portfolioItem .endItem-wrapper .endItem-container p {
+        font-size: 20px;
+        font-weight: 400;
+        font-style: italic;
+        color: #7A7979;
+        margin-bottom: 30px;
+        font-family: "Raleway", Helvetica, Arial, sans-serif; }
+      .portfolioItem .endItem-wrapper .endItem-container img {
+        width: 50px; }
+
+.portfolioClose img:hover {
+  -ms-transform: rotate(180deg) !important;
+      transform: rotate(180deg) !important;
+  -webkit-transform: rotate(180deg) !important;
+  -webkit-transition: -webkit-transform 0.3s ease-in !important;
+  transition: transform 0.3s ease-in !important;
+  z-index: 100; }
+
+.portfolioItemOn {
+  opacity: 1 !important;
+  height: initial !important;
+  box-shadow: #000 0em 0em 0em; }
+
+@media(max-width: 1096px) {
+  .portfolioItem .portfolioWrapper .portfolioHeader img {
+    width: 35%; }
+  @media(max-width: 700px) {
+    .portfolioItem .portfolioWrapper .portfolioHeader img {
+      width: 50%; } }
+  @media(max-width: 400px) {
+    .portfolioItem .portfolioWrapper .portfolioHeader img {
+      width: 70%; } } }
+@media(max-width: 767px) {
+  .portfolioItem .portfolioWrapper {
+    width: 100%;
+    margin-bottom: 0 !important; } }
+#learning {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  #learning .learning-wrapper .content h3, #learning .learning-wrapper .content p, #learning .learning-wrapper .content #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #learning .learning-wrapper .content h5, #learning .learning-wrapper .content #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #learning .learning-wrapper .content p, #learning .learning-wrapper .content #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #learning .learning-wrapper .content h5, #learning .learning-wrapper .content #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #learning .learning-wrapper .content p {
+    display: inline-block;
+    margin-top: 0;
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24.89px;
+    color: #7A7979;
+    display: block;
+    margin-bottom: 0; }
+  #learning .learning-wrapper .content p {
+    font-weight: 400;
+    color: #7A7979; }
+  #learning .learning-wrapper .content h2 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    display: inline-block;
+    float: left;
+    padding: 18px 38px;
+    border: 4px solid;
+    margin-right: 30px; }
+@media(max-width: 1180px) {
+  #learning .learning-wrapper .content h2 {
+    padding: 13px 25px;
+    font-size: 14px; } }
+  #learning .learning-wrapper .current-container h2:nth-of-type(1) {
+    color: #e04322;
+    border: 4px solid #e04322; }
+  #learning .learning-wrapper .current-container h2:nth-of-type(2) {
+    color: #019e60;
+    border: 4px solid #019e60; }
+  #learning .learning-wrapper .current-container h2:nth-of-type(3) {
+    color: #1468ae;
+    border: 4px solid #1468ae; }
+  #learning .learning-wrapper .current-container h2:nth-of-type(4) {
+    color: #c9598f;
+    border: 4px solid #c9598f; }
+  #learning .learning-wrapper .current-container h2:nth-of-type(5) {
+    color: #F6DA1C;
+    border: 4px solid #F6DA1C; }
+  #learning .learning-wrapper .current-container h2:nth-of-type(6) {
+    color: #6dcbf3;
+    border: 4px solid #6dcbf3; }
+  #learning .learning-wrapper .learning-container h2:nth-of-type(1) {
+    color: #e08301;
+    border: 4px solid #e08301; }
+  #learning .learning-wrapper .learning-container h2:nth-of-type(2) {
+    color: #90C541;
+    border: 4px solid #90C541; }
+  #learning .learning-wrapper .learning-container h2:nth-of-type(3) {
+    color: #B72B36;
+    border: 4px solid #B72B36; }
+  #learning .learning-wrapper .current-container, #learning .learning-wrapper .learning-container {
+    display: block; }
+  #learning .learning-wrapper .skills {
+    display: inline-block; }
+  #learning .learning-wrapper .learning-container {
+    margin-top: 50px; }
+@media(max-width: 992px) {
+  #learning .learning-container {
+    width: 80%; } }
+@media(max-width: 647px) {
+  #learning .learning-container .content h2 {
+    font-size: 11px;
+    color: white !important;
+    border-radius: 5px; }
+
+  #learning .learning-wrapper .current-container h2:nth-of-type(1) {
+    background: #e04322; }
+  #learning .learning-wrapper .current-container h2:nth-of-type(2) {
+    background: #019e60; }
+  #learning .learning-wrapper .current-container h2:nth-of-type(3) {
+    background: #1468ae; }
+  #learning .learning-wrapper .current-container h2:nth-of-type(4) {
+    background: #c9598f; }
+  #learning .learning-wrapper .current-container h2:nth-of-type(5) {
+    background: #F6DA1C; }
+  #learning .learning-wrapper .current-container h2:nth-of-type(6) {
+    background: #6dcbf3; }
+
+  #learning .learning-wrapper .learning-container h2:nth-of-type(1) {
+    background: #e08301; }
+  #learning .learning-wrapper .learning-container h2:nth-of-type(2) {
+    background: #90C541; }
+  #learning .learning-wrapper .learning-container h2:nth-of-type(3) {
+    background: #B72B36; } }
+@media(max-width: 602px) {
+  #learning .learning-wrapper .content p {
+    margin-bottom: 20px !important; }
+
+  #learning .learning-container .content {
+    width: 100%; }
+
+  #learning .learning-container .content .skills {
+    width: 100%; }
+
+  #learning .learning-wrapper .content h2 {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0; }
+
+  #learning .learning-container {
+    width: 100%; } }
+#contact {
+  background: none; }
+  #contact #menu-contact {
+    position: relative;
+    top: -74px; }
+  #contact .gmap#map-canvas {
+    overflow: hidden;
+    pointer-events: none;
+    width: 100%;
+    height: calc(30vh - 74px); }
+    #contact .gmap#map-canvas .gmnoprint {
+      display: none; }
+    #contact .gmap#map-canvas .gm-style-cc {
+      display: none; }
+    #contact .gmap#map-canvas iframe {
+      width: 100%; }
+  #contact #contact-wrapper {
+    background: #1c1c1f;
+    height: 550px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-direction: row;
+    -webkit-align-items: center;
+    padding: 100px; }
+    #contact #contact-wrapper .container .details h3, #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details-mobile h3, #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile p {
+      color: white;
+      font-weight: 400;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      font-size: 28px;
+      margin-top: 0; }
+    #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile p {
+      color: #7A7979;
+      margin-bottom: 0px; }
+    #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details-mobile h5 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 4px; }
+    #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details-mobile p {
+      font-size: 13px; }
+    #contact #contact-wrapper .container .details p a, #contact #contact-wrapper .container .details-mobile p a {
+      color: #76bf77; }
+    #contact #contact-wrapper .container .details p.cv, #contact #contact-wrapper .container .details-mobile p.cv {
+      font-weight: 300;
+      color: #76bf77; }
+    #contact #contact-wrapper .container #success {
+      height: initial;
+      position: absolute;
+      top: 48%;
+      width: 100%;
+      color: white;
+      font-family: "Lato", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-size: 20px; }
+    #contact #contact-wrapper .container #error {
+      height: initial;
+      position: absolute;
+      top: 48%;
+      width: 100%;
+      color: white;
+      font-family: "Lato", Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-size: 20px; }
+    #contact #contact-wrapper .container #success, #contact #contact-wrapper .container #error {
+      display: none; }
+    #contact #contact-wrapper .container form {
+      -moz-placeholder-opacity: 1;
+      -moz-placeholder-color: #7A7979;
+      -ms-input-placeholder-opacity: 1;
+      -ms-input-placeholder-color: #7A7979; }
+      #contact #contact-wrapper .container form .row {
+        position: relative; }
+        #contact #contact-wrapper .container form .row .fa-wrapper {
+          position: absolute;
+          height: 40px; }
+        #contact #contact-wrapper .container form .row .fa-container {
+          height: inherit;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -webkit-justify-content: center;
+          -webkit-flex-direction: row;
+          -webkit-align-items: center; }
+        #contact #contact-wrapper .container form .row .fa {
+          font-size: 20px;
+          color: #7A7979;
+          position: relative;
+          left: 13px; }
+      #contact #contact-wrapper .container form .formRow3 {
+        position: relative; }
+        #contact #contact-wrapper .container form .formRow3 .fa-wrapper {
+          position: absolute;
+          top: 0;
+          top: 10px;
+          left: 13px; }
+        #contact #contact-wrapper .container form .formRow3 .fa {
+          font-size: 20px;
+          color: #7A7979;
+          position: relative;
+          z-index: 1; }
+      #contact #contact-wrapper .container form input:focus, #contact #contact-wrapper .container form select:focus, #contact #contact-wrapper .container form textarea:focus, #contact #contact-wrapper .container form button:focus {
+        outline: none; }
+      #contact #contact-wrapper .container form input, #contact #contact-wrapper .container form textarea {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        resize: none;
+        width: 100%;
+        padding: 10px;
+        background-color: #0F0F11;
+        border: none;
+        color: #7A7979;
+        padding-left: 40px;
+        font-size: 18px;
+        font-family: "Open Sans", Helvetica, sans-serif;
+        font-weight: 400; }
+      #contact #contact-wrapper .container form .formRow4 {
+        -webkit-transition: ".8s";
+        transition: ".8s"; }
+        #contact #contact-wrapper .container form .formRow4 .col-md-3 {
+          width: 23%;
+          padding-top: 15px; }
+        #contact #contact-wrapper .container form .formRow4 input {
+          font-weight: 300;
+          color: white;
+          background: #6051a3;
+          padding-left: 10px;
+          text-transform: uppercase;
+          -webkit-transition: ".8s";
+          transition: ".8s"; }
+        #contact #contact-wrapper .container form .formRow4 input:hover, #contact #contact-wrapper .container form .formRow4 input:focus {
+          background: #887EBD;
+          -webkit-transition: ".8s";
+          transition: ".8s"; }
+      #contact #contact-wrapper .container form ::-webkit-input-placeholder {
+        opacity: 1;
+        color: #7A7979; }
+      #contact #contact-wrapper .container form ::-moz-placeholder {
+        opacity: 1;
+        color: #7A7979; }
+      #contact #contact-wrapper .container form .formRow1 .col-md-6:nth-child(1) {
+        padding-right: 7.5px; }
+      #contact #contact-wrapper .container form .formRow1 .col-md-6:nth-child(2) {
+        padding-left: 7.5px; }
+      #contact #contact-wrapper .container form .formRow2 {
+        padding-top: 15px;
+        padding-bottom: 15px; }
+      #contact #contact-wrapper .container form i {
+        z-index: 100; }
+      #contact #contact-wrapper .container form #name-error, #contact #contact-wrapper .container form #email-error, #contact #contact-wrapper .container form #message-error {
+        color: #cc6767;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        position: static; }
+@media(min-width: 993px) {
+  #contact .details-mobile {
+    display: none;
+    visibility: hidden; } }
+@media(max-width: 992px) {
+  #contact .details {
+    display: none;
+    visibility: hidden; }
+  #contact #contact-wrapper {
+    height: 800px; }
+  #contact .name-input {
+    padding-left: 15px !important; }
+    #contact .name-input input {
+      padding-right: 0; }
+  #contact .email-input {
+    padding-top: 15px;
+    padding-left: 15px !important; }
+  #contact #contact-wrapper .container form .formRow1 .col-md-6:nth-child(1) {
+    padding-right: 15px; }
+  #contact .details-mobile {
+    padding-left: 30px;
+    padding-bottom: 25px; } }
+@media(max-width:770px) {
+  #contact #contact-wrapper {
+    padding: 50px; }
+    #contact #contact-wrapper .container {
+      width: 100%; }
+  #contact .details-mobile {
+    text-align: center;
+    padding-left: 0; } }
+@media(max-width: 660px) {
+  #contact .submit-input {
+    width: 100% !important;
+    display: block !important; } }
+@media(max-width: 590px) {
+  #contact #contact-wrapper {
+    padding: 0; } }
+#portfolioItem1 .portfolioWrapper .portfolioContainer1, #portfolioItem1 .portfolioWrapper .portfolioContainer2, #portfolioItem1 .portfolioWrapper .portfolioContainer3 {
+  padding: 10%;
+  width: inherit;
+  background: #A1B2A6; }
+#portfolioItem1 .portfolioWrapper .fullWebsite img {
+  width: 100%; }
+#portfolioItem1 .portfolioWrapper .overview {
+  color: white;
+  padding-left: 3%; }
+  #portfolioItem1 .portfolioWrapper .overview h2 {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin-top: 0; }
+  #portfolioItem1 .portfolioWrapper .overview h6 {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 29px;
+    margin-top: 0; }
+  #portfolioItem1 .portfolioWrapper .overview h6 span {
+    font-weight: 600; }
+  #portfolioItem1 .portfolioWrapper .overview p {
+    margin-top: 3%;
+    background: white;
+    color: #7A7979;
+    padding: 3%;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 18px; }
+#portfolioItem1 .portfolioWrapper .portfolioContainer2 {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  background: #1c1c1f;
+  text-align: center;
+  color: #CCBA51; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2 h4 {
+    font-weight: 400;
+    font-size: 60px;
+    font-style: italic;
+    font-font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-padding-bottom: 3%; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2 img {
+    width: 200px;
+    -webkit-filter: grayscale(1) opacity(0.2);
+    filter: grayscale(1) opacity(0.2);
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2 img:hover {
+    -webkit-filter: grayscale(0) opacity(1);
+    filter: grayscale(0) opacity(1); }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2 .row {
+    margin-top: 3%; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2 .row.first {
+    margin-top: 5%; }
+#portfolioItem1 .portfolioWrapper .portfolioContainer3 {
+  padding: 0;
+  background: #F4F4F4; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .banner {
+    height: 300px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center;
+    position: static;
+    background: url(../assets/img/craftguard/background.jpg) center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -webkit-backface-visibility: hidden; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer3 .banner h4 {
+      margin: 0;
+      color: white;
+      font-size: 60px;
+      font-weight: 300;
+      font-family: "Lato", Helvetica, Arial, sans-serif;
+      background-color: rgba(15, 15, 17, 0.6);
+      padding: 25px 40px; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header {
+    height: 600px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -webkit-flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .image {
+      text-align: center; }
+      #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .image img {
+        width: 80%; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text {
+      width: 40%; }
+      #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h3, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #about .about-container .text-wrapper p, #about .about-container .text-wrapper #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #learning .learning-wrapper .content p, #learning .learning-wrapper .content #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h5, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h5, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: inline-block;
+        color: #1c1c1f;
+        font-family: "Raleway", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 60px; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .content-wrapper {
+    border-top: 1px solid rgba(122, 121, 121, 0.2);
+    display: block;
+    height: initial;
+    background: white; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer3 .content-wrapper .content-container {
+      padding: 10%;
+      display: inline-block; }
+@media(min-width: 992px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .content-wrapper .content-container .fullWebsite img:nth-child(1) {
+    padding-bottom: 6%; } }
+      #portfolioItem1 .portfolioWrapper .portfolioContainer3 .content-wrapper .content-container .text p {
+        background: none;
+        margin-top: 0;
+        padding: 0;
+        padding-left: 3%;
+        margin-top: 3%;
+        background: white;
+        color: #7A7979;
+        padding: 3%;
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        line-height: 30px;
+        font-weight: 300;
+        font-size: 18px; }
+@media(max-width: 1235px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .content-wrapper .content-container .text p {
+    line-height: 25px;
+    font-size: 15px; } }
+@media(max-width: 991px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .content-wrapper .content-container .text p {
+    padding-left: 0;
+    padding-right: 0; } }
+@media(max-width: 690px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .content-wrapper .content-container {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer3 .content-wrapper .content-container .text {
+      padding-left: 10%;
+      padding-right: 10%; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer3 .content-wrapper .content-container .fullWebsite {
+      padding-left: 0;
+      padding-right: 0; }
+      #portfolioItem1 .portfolioWrapper .portfolioContainer3 .content-wrapper .content-container .fullWebsite img {
+        padding-bottom: 0; } }
+#portfolioItem1 .portfolioWrapper .portfolioContainer4 {
+  background: #F2F2F2;
+  padding: 0; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container {
+    padding: 10%;
+    height: 500px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center;
+    position: relative; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container .text {
+      width: 600px; }
+      #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container .text p {
+        margin-top: 0;
+        padding: 0;
+        color: #7A7979;
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-size: 16px; }
+@media(max-width: 700px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container .text {
+    width: 100%; } }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h3, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #about .about-container .text-wrapper p, #about .about-container .text-wrapper #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #learning .learning-wrapper .content p, #learning .learning-wrapper .content #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h5, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h5, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p {
+      margin-top: 0;
+      padding: 0;
+      color: #7A7979;
+      font-family: "Raleway", Helvetica, Arial, sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      margin-right: 20px;
+      position: absolute;
+      bottom: 40px;
+      margin-right: 30px; }
+@media(max-width: 550px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h3, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #about .about-container .text-wrapper p, #about .about-container .text-wrapper #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #learning .learning-wrapper .content p, #learning .learning-wrapper .content #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h5, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h5, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p {
+    font-size: 24px; } }
+      #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h3:nth-child(1), #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #about .about-container .text-wrapper p:nth-child(1), #about .about-container .text-wrapper #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p:nth-child(1), #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #learning .learning-wrapper .content p:nth-child(1), #learning .learning-wrapper .content #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p:nth-child(1), #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details h5:nth-child(1), #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h5:nth-child(1), #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details p:nth-child(1), #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p:nth-child(1), #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details-mobile h5:nth-child(1), #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h5:nth-child(1), #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details-mobile p:nth-child(1), #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p:nth-child(1) {
+        color: #C6B148;
+        bottom: 0;
+        top: 100px; }
+      #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h3 i, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #about .about-container .text-wrapper p i, #about .about-container .text-wrapper #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p i, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #learning .learning-wrapper .content p i, #learning .learning-wrapper .content #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p i, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details h5 i, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h5 i, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details p i, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p i, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details-mobile h5 i, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container h5 i, #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container #contact #contact-wrapper .container .details-mobile p i, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer4 .content-container p i {
+        margin-left: 15px; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer4 .preview {
+    background: #C6B148;
+    width: 100%;
+    height: initial;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer4 .preview h4 {
+      margin-top: 0;
+      padding: 0;
+      color: #7A7979;
+      padding: 3%;
+      color: white;
+      font-family: "Lato", Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      display: inline-block;
+      width: initial; }
+      #portfolioItem1 .portfolioWrapper .portfolioContainer4 .preview h4:nth-child(1) {
+        padding-top: 0; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer4 .preview h4.last {
+      margin-top: 100px; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer4 .preview img {
+      width: 80%; }
+@media(max-width: 1330px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer4 .preview img {
+    width: 90%; } }
+@media(max-width: 991px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer4 .preview {
+    padding-top: 0;
+    padding-bottom: 0; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer4 .preview img {
+      width: 100%; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer4 .preview h4:nth-child(1) {
+      padding-top: 3%; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer4 .preview h4.last {
+      margin-top: 0; } }
+@media(max-width: 1560px) {
+  #portfolioItem1 .portfolioWrapper {
+    width: 100%; }
+  @media(max-width: 767px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 {
+      width: 100%; } }
+  @media(max-width: 991px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview {
+      margin-top: 40px; } }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview h2 {
+      font-size: 60px; }
+  @media(max-width: 1360px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview h2 {
+      font-size: 50px; } }
+  @media(max-width: 1055px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview h2 {
+      font-size: 45px; } }
+  @media(max-width: 605px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview h2 {
+      font-size: 38px; } }
+  @media(max-width: 400px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview h2 {
+      font-size: 33px; } }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview h6 {
+      font-size: 24px; }
+  @media(max-width: 1360px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview h6 {
+      font-size: 20px; } }
+  @media(max-width: 1055px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview h6 {
+      font-size: 16px; } }
+  @media(max-width: 605px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview h6 {
+      font-size: 15px; } }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview p {
+      font-size: 15px;
+      line-height: 27px; }
+  @media(max-width: 1360px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer1 .overview p {
+      font-size: 14px;
+      line-height: 22px; } } }
+@media(max-width: 1400px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2 .row .col-md-3 img {
+    width: 150px; } }
+@media(max-width: 991px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2 .row .col-md-3 {
+    width: 40%;
+    display: inline-block; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2 .row .col-md-3.first {
+    margin-bottom: 40px; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2 .row .col-md-3.second {
+    margin-bottom: 20px; } }
+@media(max-width: 685px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2.col-md-12 {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2 .row .col-md-3 img {
+    width: 120px; } }
+@media(max-width: 400px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2.col-md-12 {
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  #portfolioItem1 .portfolioWrapper .portfolioContainer2 .row .col-md-3 img {
+    width: 90px; } }
+@media(max-width:1110px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .banner h4 {
+    font-size: 40px; } }
+@media(max-width:650px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .banner h4 {
+    font-size: 24px; } }
+@media(max-width:550px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .banner h4 {
+    font-size: 17px; } }
+@media(max-width: 1260px) {
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .image {
+      padding-bottom: 70px; }
+    #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text {
+      text-align: center;
+      width: 600px; }
+      #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h3, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #about .about-container .text-wrapper p, #about .about-container .text-wrapper #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #learning .learning-wrapper .content p, #learning .learning-wrapper .content #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h5, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h5, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p {
+        font-size: 35px; }
+  @media(max-width: 800px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h3, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #about .about-container .text-wrapper p, #about .about-container .text-wrapper #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #learning .learning-wrapper .content p, #learning .learning-wrapper .content #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h5, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h5, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p {
+      font-size: 26px; } }
+  @media(max-width: 550px) {
+    #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h3, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #about .about-container .text-wrapper p, #about .about-container .text-wrapper #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #learning .learning-wrapper .content p, #learning .learning-wrapper .content #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h5, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text h5, #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text p {
+      font-size: 22px; } } }
+@media(max-width: 991px) {
+  .portfolioWrapper .portfolioContainer3 .header .image {
+    padding-bottom: 50px;
+    display: block;
+    width: 100% !important; }
+
+  .portfolioWrapper .portfolioContainer3 .header .image img {
+    width: 60% !important; }
+
+  #portfolioItem1 .portfolioWrapper .portfolioContainer3 .row.header .text {
+    width: 70%; } }
+@media(max-width: 759px) {
+  .portfolioWrapper .portfolioContainer3 .row.header .image {
+    padding-bottom: 30px !important;
+    display: block;
+    width: 100% !important; }
+
+  .portfolioWrapper .portfolioContainer3 .header .image img {
+    width: 60% !important; } }
+@media(max-width: 574px) {
+  .portfolioWrapper .portfolioContainer3 .header .image img {
+    width: 80% !important; } }
+#portfolioItem2 .portfolioWrapper .portfolioContainer2 {
+  padding-right: 0;
+  padding-left: 0; }
+  #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header {
+    border-bottom: 5px solid #FFAB2D;
+    height: 500px;
+    background: #13A9CB;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header img {
+      width: 150px; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header h4 {
+      padding-left: 50px;
+      font-size: 40px;
+      font-weight: 400;
+      color: white;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+  #portfolioItem2 .portfolioWrapper .portfolioContainer2 .info {
+    height: 800px;
+    margin-right: 0;
+    margin-left: 0; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .info .image {
+      background: url(../assets/img/booket/background1.png) center top no-repeat;
+      background-size: cover;
+      height: inherit; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .info .content {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center;
+      background: #F4F4F4;
+      padding-left: 0;
+      height: inherit; }
+      #portfolioItem2 .portfolioWrapper .portfolioContainer2 .info .content p {
+        padding: 10%;
+        font-size: 14px;
+        font-weight: 400;
+        color: #7A7979;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        margin-bottom: 0; }
+  #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo {
+    height: 600px;
+    overflow: hidden; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image {
+      height: inherit;
+      position: relative;
+      right: -5%;
+      position: relative;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image img {
+        width: 120%; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .content {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center;
+      height: inherit; }
+      #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .content p {
+        padding: 10%;
+        font-size: 14px;
+        font-weight: 400;
+        color: #7A7979;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        margin: 0; }
+  #portfolioItem2 .portfolioWrapper .portfolioContainer2 .website {
+    padding: 15%;
+    background: #21657F; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .website img {
+      width: inherit; }
+@media(max-width: 570px) {
+  #portfolioItem2 .portfolioWrapper .portfolioContainer2 .website {
+    padding: 0; } }
+@media(max-width: 1520px) {
+  #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header {
+    text-align: center; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header h4 {
+      font-size: 30px; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header img {
+      width: 120px; }
+  @media(max-width: 1100px) {
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header h4 {
+      font-size: 24px; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header img {
+      width: 100px; } }
+  @media(max-width: 760px) {
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header h4 {
+      font-size: 20px; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header img {
+      width: 80px; } }
+  @media(max-width: 610px) {
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -webkit-flex-direction: column; }
+      #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header h4 {
+        font-size: 20px;
+        padding-left: 0; }
+      #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header img {
+        width: 100px;
+        padding-bottom: 20px; } }
+  @media(max-width: 475px) {
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header h4 {
+      font-size: 17px;
+      padding-left: 0; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .header img {
+      width: 100px;
+      padding-bottom: 20px; } } }
+@media(max-width: 991px) {
+  #portfolioItem2 .portfolioWrapper .portfolioContainer2 .row.info {
+    height: initial; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .row.info .image {
+      height: 400px; }
+  #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo {
+    display: block;
+    height: 400px; }
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image {
+      position: relative;
+      left: 50%;
+      bottom: 70%;
+      opacity: 0.6; }
+      #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image .imageWrapper {
+        position: absolute;
+        left: -75%; }
+        #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image .imageWrapper img {
+          width: 1200px; }
+  @media(max-width: 745px) {
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image {
+      bottom: 60%; }
+      #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image .imageWrapper img {
+        width: 1000px; } }
+  @media(max-width: 650px) {
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image {
+      bottom: 48%; }
+      #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image .imageWrapper img {
+        width: 800px; } }
+  @media(max-width: 400px) {
+    #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image {
+      bottom: 30%; }
+      #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image .imageWrapper {
+        left: -55%; }
+        #portfolioItem2 .portfolioWrapper .portfolioContainer2 .logoInfo .image .imageWrapper img {
+          width: 500px; } } }
+#portfolioItem2 .portfolioWrapper .mockups img {
+  width: 100%; }
+
+#portfolioItem3 .portfolioWrapper .portfolioContainer3 {
+  padding-right: 0;
+  padding-left: 0; }
+  #portfolioItem3 .portfolioWrapper .portfolioContainer3 .header {
+    height: 600px;
+    background: #F4DAB9;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center; }
+    #portfolioItem3 .portfolioWrapper .portfolioContainer3 .header img {
+      width: 500px; }
+  #portfolioItem3 .portfolioWrapper .portfolioContainer3 .content {
+    height: 800px; }
+    #portfolioItem3 .portfolioWrapper .portfolioContainer3 .content .image {
+      background: url(../assets/img/chromahills/background.png) no-repeat center bottom;
+      background-size: cover;
+      height: inherit;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      #portfolioItem3 .portfolioWrapper .portfolioContainer3 .content .image img {
+        width: 300px; }
+    #portfolioItem3 .portfolioWrapper .portfolioContainer3 .content .info {
+      padding: 10%;
+      height: inherit;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      #portfolioItem3 .portfolioWrapper .portfolioContainer3 .content .info p {
+        color: #7A7979;
+        font-weight: 300;
+        font-size: 18px;
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        margin: 0; }
+        #portfolioItem3 .portfolioWrapper .portfolioContainer3 .content .info p a {
+          text-decoration: none;
+          color: #76bf77; }
+  #portfolioItem3 .portfolioWrapper .portfolioContainer3 .website {
+    height: initial; }
+    #portfolioItem3 .portfolioWrapper .portfolioContainer3 .website img {
+      width: 100vw;
+      height: auto; }
+@media(min-width: 1250px) {
+  #portfolioItem3 .portfolioWrapper .portfolioContainer3 .website {
+    padding: 10%;
+    background: #F0F0F0; }
+    #portfolioItem3 .portfolioWrapper .portfolioContainer3 .website img {
+      width: 100%; } }
+@media(max-width: 991px) {
+  #portfolioItem3 .portfolioWrapper .portfolioContainer3 .content {
+    height: 100%; }
+    #portfolioItem3 .portfolioWrapper .portfolioContainer3 .content .image {
+      height: 500px !important; }
+    #portfolioItem3 .portfolioWrapper .portfolioContainer3 .content .info {
+      height: inherit; } }
+#portfolioItem4 .portfolioWrapper .portfolioHeader img {
+  width: 20%; }
+@media(max-width: 1080px) {
+  #portfolioItem4 .portfolioWrapper .portfolioHeader img {
+    width: 25%; } }
+@media(max-width: 632px) {
+  #portfolioItem4 .portfolioWrapper .portfolioHeader img {
+    width: 40%; } }
+@media(max-width: 400px) {
+  #portfolioItem4 .portfolioWrapper .portfolioHeader img {
+    width: 55%; } }
+#portfolioItem4 .portfolioWrapper .portfolioContainer4 {
+  padding-right: 0;
+  padding-left: 0; }
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .header {
+    height: 600px;
+    width: 100vw;
+    background: #1E92D4;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center;
+    position: relative;
+    overflow: hidden; }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .header img {
+      height: inherit;
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content {
+    height: 100%; }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .image {
+      height: 800px;
+      background: white;
+      position: relative;
+      overflow: hidden; }
+      #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .image img {
+        width: 500px;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .text {
+      height: 800px;
+      background: #F6F6F6;
+      padding: 8%;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      -webkit-align-items: flex-start;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+@media(max-width: 1074px) {
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .text {
+    padding: 6%; } }
+@media(max-width: 580px) {
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .text {
+    height: 800px;
+    padding: 10%; } }
+@media(max-width: 432px) {
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .text {
+    height: 900px; } }
+@media(max-width: 360px) {
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .text {
+    height: 950px; } }
+      #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .text p:nth-child(1) {
+        padding-bottom: 20px; }
+      #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .text p {
+        color: #7A7979;
+        font-weight: 300;
+        font-size: 18px;
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        margin: 0; }
+@media(max-width: 1573px) {
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .text p {
+    font-size: 16px; } }
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 {
+    height: 650px;
+    background: white;
+    position: relative; }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .shape {
+      position: absolute;
+      top: 0;
+      right: -10%;
+      width: 65%;
+      height: inherit;
+      background: #1E92D4;
+      -webkit-transform: skew(-20deg);
+          -ms-transform: skew(-20deg);
+              transform: skew(-20deg); }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image1 {
+      padding: 5%;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center;
+      height: inherit;
+      overflow: hidden; }
+      #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image1 img {
+        width: 500px;
+        min-width: 500px; }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image2 {
+      padding: 5%;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center;
+      height: inherit;
+      overflow: hidden; }
+      #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image2 img {
+        width: 500px;
+        min-width: 500px; }
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .website {
+    background: #F6F6F6;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center; }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .website img {
+      padding: 10%;
+      height: 100%;
+      width: 100vw; }
+@media(min-width:1170px) {
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .website img {
+    max-width: 1500px; } }
+@media(max-width: 750px) {
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .website img {
+    padding: 0; } }
+@media(max-width:500px) {
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .website {
+    margin-top: 10px; } }
+@media(max-width: 1320px) {
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image1 img, #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image2 img {
+    width: 400px;
+    min-width: 400px; } }
+@media(max-width: 991px) {
+  @media(max-width: 680px) {
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .header img {
+      height: 500px; } }
+  @media(max-width: 400px) {
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .header img {
+      height: 350px; } }
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .image {
+    height: 400px;
+    background: white url(../assets/img/jrh/icon.png) center center no-repeat;
+    background-size: 200px; }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content .image img {
+      display: none;
+      visibility: hidden; }
+  #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 {
+    height: 100%; }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .shape {
+      right: -14%; }
+  @media(max-width: 765px) {
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .shape {
+      right: -20%; } }
+  @media(max-width: 500px) {
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .shape {
+      display: none;
+      visibility: hidden; }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image1 img, #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image2 img {
+      display: none;
+      visibility: hidden; }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image1 {
+      background: url(../assets/img/jrh/frontMobile.png) no-repeat center;
+      background-size: 100%;
+      padding: 0; }
+      #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image1 img {
+        display: block;
+        width: 100%;
+        min-width: 100%; }
+    #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image2 {
+      background: url(../assets/img/jrh/backMobile.png) no-repeat center;
+      background-size: 100%;
+      padding: 0; }
+      #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .image2 img {
+        display: block;
+        width: 100%;
+        min-width: 100%; } } }
+#portfolioItem4 .portfolioWrapper .mockups img {
+  width: 100%; }
+
+#portfolioItem5 .portfolioWrapper .portfolioHeader img {
+  width: 15%; }
+@media(max-width: 1080px) {
+  #portfolioItem5 .portfolioWrapper .portfolioHeader img {
+    width: 20%; } }
+@media(max-width: 632px) {
+  #portfolioItem5 .portfolioWrapper .portfolioHeader img {
+    width: 40%; } }
+@media(max-width: 400px) {
+  #portfolioItem5 .portfolioWrapper .portfolioHeader img {
+    width: 55%; } }
+#portfolioItem5 .portfolioHeader {
+  background: #E82635; }
+#portfolioItem5 .portfolioWrapper .portfolioContainer5 {
+  padding-right: 0;
+  padding-left: 0; }
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header {
+    height: 600px;
+    width: 100vw;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center;
+    position: relative;
+    overflow: hidden; }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header .image {
+      width: 100%;
+      margin: auto;
+      display: block;
+      text-align: center; }
+      #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header .image img {
+        width: 800px;
+        height: auto; }
+@media(max-width: 1035px) {
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header {
+    height: 550px; }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header .image img {
+      width: 745px; } }
+@media(min-width:981px) {
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header .imageMobile {
+    display: none;
+    visibility: hidden; } }
+@media(max-width: 980px) {
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header {
+    height: 450px; }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header .image img {
+      position: static;
+      bottom: 0;
+      width: 600px; }
+  @media(max-width: 730px) {
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header .image img {
+      width: 450px; } }
+  @media(min-width: 730px) {
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header .image img:nth-child(2) {
+      display: none;
+      visibility: hidden; } }
+  @media(max-width:729px) {
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header .image img:nth-child(1) {
+      display: none;
+      visibility: hidden; } }
+  @media(max-width:729px) {
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header .image {
+      padding-top: 50px; }
+      #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header .image img:nth-child(2) {
+        width: 350px; }
+    @media(max-width: 400px) {
+      #portfolioItem5 .portfolioWrapper .portfolioContainer5 .header .image img:nth-child(2) {
+        width: 270px; } } } }
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content {
+    height: 100%;
+    border-bottom: 3px solid white; }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .image {
+      background: #E82635;
+      height: 800px;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .image img {
+        width: 380px; }
+@media(max-width: 1060px) {
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .image img {
+    width: 340px; } }
+@media(max-width: 991px) {
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .image {
+    height: 500px; }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .image img {
+      width: 340px; }
+  @media(max-width: 512px) {
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .image img {
+      width: 300px; } }
+  @media(max-width: 350px) {
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .image img {
+      width: 250px; } } }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .text {
+      background: #F2F2F2;
+      height: 800px;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      -webkit-align-items: flex-start;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .text p {
+        padding: 10%;
+        color: #7A7979;
+        font-weight: 300;
+        font-size: 16px;
+        font-family: "Lato", Helvetica, Arial, sans-serif; }
+        #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .text p:nth-child(1) {
+          padding-bottom: 0px;
+          display: inline-block;
+          width: 100%; }
+        #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .text p:nth-child(2) {
+          padding-top: 0; }
+        #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .text p a {
+          color: #76bf77;
+          text-decoration: none; }
+@media(max-width: 615px) {
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .text {
+    height: 600px; } }
+@media(max-width: 530px) {
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .text {
+    height: 700px; } }
+@media(max-width: 430px) {
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .text {
+    height: 800px; } }
+@media(max-width: 360px) {
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content .text {
+    height: 860px; } }
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content2 {
+    height: 800px;
+    background: #E82635;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center; }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content2 .image1 {
+      margin-right: 17%; }
+      #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content2 .image1 img {
+        width: 280px; }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content2 .image2 img {
+      width: 240px; }
+@media(max-width: 1160px) {
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content2 {
+    height: 600px; }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content2 .image1 {
+      margin-right: 12%; }
+      #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content2 .image1 img {
+        width: 190px; }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content2 .image2 img {
+      width: 150px; } }
+@media(max-width: 515px) {
+  #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content2 {
+    height: 800px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-flex-direction: column; }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content2 .image1 {
+      margin-right: 0;
+      margin-bottom: 50px;
+      width: initial; }
+    #portfolioItem5 .portfolioWrapper .portfolioContainer5 .content2 .image2 {
+      width: initial; } }
+#portfolioItem6 .portfolioWrapper .portfolioHeader img {
+  width: 25%; }
+@media(max-width: 1080px) {
+  #portfolioItem6 .portfolioWrapper .portfolioHeader img {
+    width: 35%; } }
+@media(max-width: 632px) {
+  #portfolioItem6 .portfolioWrapper .portfolioHeader img {
+    width: 50%; } }
+@media(max-width: 400px) {
+  #portfolioItem6 .portfolioWrapper .portfolioHeader img {
+    width: 65%; } }
+#portfolioItem6 .portfolioHeader {
+  background: #343434; }
+#portfolioItem6 .portfolioWrapper .portfolioContainer6 {
+  padding-right: 0;
+  padding-left: 0; }
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .header {
+    height: 600px;
+    width: 100vw;
+    background: #D5A15E;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 5px solid #66A066; }
+    #portfolioItem6 .portfolioWrapper .portfolioContainer6 .header img {
+      height: 600px;
+      width: auto;
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      right: 0;
+      margin: auto; }
+@media(max-width:400px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .header {
+    height: 500px; }
+    #portfolioItem6 .portfolioWrapper .portfolioContainer6 .header img {
+      height: 500px; } }
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content {
+    height: 100%;
+    border-bottom: 3px solid white; }
+    #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .text {
+      background: #F2F2F2;
+      height: 800px;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      -webkit-align-items: flex-start;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .text p {
+        padding: 10%;
+        color: #7A7979;
+        font-weight: 300;
+        font-size: 16px;
+        font-family: "Lato", Helvetica, Arial, sans-serif; }
+        #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .text p:nth-child(1) {
+          padding-bottom: 0px; }
+        #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .text p:nth-child(2) {
+          padding-top: 0; }
+@media(max-width: 615px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .text {
+    height: 500px; } }
+@media(max-width: 500px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .text {
+    height: 600px; } }
+@media(max-width: 400px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .text {
+    height: 700px; } }
+@media(max-width: 350px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .text {
+    height: 730px; } }
+    #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .image {
+      background: url(../assets/img/lakecountry/image.png) no-repeat center center;
+      background-size: cover;
+      -webkit-background-size: cover;
+      height: 800px;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .image img {
+        width: 380px; }
+@media(max-width: 1060px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .image img {
+    width: 340px; } }
+@media(max-width: 991px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .image {
+    height: 500px; }
+    #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .image img {
+      width: 340px; }
+  @media(max-width: 512px) {
+    #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .image img {
+      width: 300px; } }
+  @media(max-width: 350px) {
+    #portfolioItem6 .portfolioWrapper .portfolioContainer6 .content .image img {
+      width: 250px; } } }
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .website {
+    height: 100vh;
+    width: 100%;
+    padding: 10%;
+    background: #66A066;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-justify-content: center; }
+    #portfolioItem6 .portfolioWrapper .portfolioContainer6 .website img {
+      width: 70%; }
+@media(min-width:1400px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .website img {
+    width: 800px; } }
+@media(max-width:1245px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .website img {
+    width: 80%; } }
+@media(max-width:991px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .website img {
+    width: 90%; } }
+@media(max-width:830px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .website img {
+    width: 100%; } }
+@media(max-width:640px) {
+  #portfolioItem6 .portfolioWrapper .portfolioContainer6 .website {
+    padding: 0;
+    height: initial; } }

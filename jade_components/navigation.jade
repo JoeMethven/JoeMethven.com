@@ -1,0 +1,29 @@
+nav#navigation
+
+	.nav
+
+		.mobile-navigation
+			.logo-mobile
+				a.logo-image-mobile(href="#" onclick="$('#start').animatescroll({scrollSpeed:2000,easing:'easeInQuad'});")
+					img(src="assets/img/logo-ext-bold.png" alt="Joe Methven")
+			.dropdown.clearfix
+				a(href="#", role="dropdown-nav", data-toggle="dropdown", aria-labelledby="dropdownMenu").dropdown-toggle
+					i.fa.fa-bars
+
+		.main-navigation
+			ul.nav.navbar-nav
+				li: a(href="#home" onclick="$('#start').animatescroll({scrollSpeed:2000,easing:'easeInQuad'});")
+						| HOME
+						span.sr-only (current)
+				li: a(href="#menu-about" onclick="$('#menu-about').animatescroll({scrollSpeed:2000,easing:'easeInQuad'}); $('#about').addClass('current')")
+						| ABOUT
+				
+				.logo
+					a.logo-image(href="#" onclick="$('#start').animatescroll({scrollSpeed:2000,easing:'easeInQuad'});")
+						img(src="assets/img/logo-ext-bold.png" alt="Joe Methven")
+				
+				li: a(href="#menu-portfolio" onclick="$('#menu-portfolio').animatescroll({scrollSpeed:2000,easing:'easeInQuad'}); $('#test').addClass('current')")
+						| PORTFOLIO
+
+				li: a(href="#menu-contact" onclick="$('#menu-contact').animatescroll({scrollSpeed:2000,easing:'easeInQuad'}); $('#contact').addClass('current')")
+						| CONTACT

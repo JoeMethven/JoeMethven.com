@@ -1,0 +1,25 @@
+doctype
+html(lang="en")
+	include jade_components/header
+
+	body
+
+		.container-fluid.start-wrapper#start
+			#element
+			.col-md-12.logo
+				a(onclick="$('#home').animatescroll({scrollSpeed:2000,easing:'easeInQuad'});")
+					img(src="assets/img/logo.png", alt="Joe Methven")
+			.col-md-12.arrow-wrapper
+				a(onclick="$('#home').animatescroll({scrollSpeed:2000,easing:'easeInQuad'});")
+					i.fa.fa-angle-down
+						
+		include jade_components/mobileNavigation
+		include jade_components/navigation
+		include jade_components/home
+		include jade_components/about
+		include jade_components/portfolio
+		include jade_components/contact
+
+	footer
+		// Importing jquery.js, bootstrap.js
+		include jade_components/scripts

@@ -1,0 +1,224 @@
+#portfolioItem4 .portfolioWrapper .portfolioHeader img
+	width: 20%
+	@media(max-width: 1080px)
+		width: 25%
+	@media(max-width: 632px)
+		width: 40%
+	@media(max-width: 400px)
+		width: 55%
+
+#portfolioItem4
+	.portfolioWrapper
+		.portfolioContainer4
+			padding-right: 0
+			padding-left: 0
+			.header
+				height: 600px
+				width: 100vw
+				background: #1E92D4
+
+				display: -webkit-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				flex-direction: row
+				align-items: center
+				-webkit-align-items: center
+				justify-content: center
+				-webkit-justify-content: center
+
+				position: relative
+				overflow: hidden
+
+				img
+					height: inherit
+					position: absolute
+					left: 0
+					bottom: 0
+
+			.content
+				height: 100%
+
+				.image
+					height: 800px
+					background: white
+					position: relative
+					overflow: hidden
+					
+					img
+						width: 500px
+						height: auto
+						position: absolute
+						bottom: 0
+						right: 0
+
+				.text
+					height: 800px
+					background: #F6F6F6
+					padding: 8%
+					display: -webkit-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					flex-direction: column
+					-webkit-flex-direction: column
+					align-items: flex-start
+					-webkit-align-items: flex-start
+					justify-content: center
+					-webkit-justify-content: center
+					@media(max-width: 1074px)
+						padding: 6%
+					@media(max-width: 580px)
+						height: 800px
+						padding: 10%
+					@media(max-width: 432px)
+						height: 900px
+					@media(max-width: 360px)
+						height: 950px
+
+
+					p:nth-child(1)
+						padding-bottom: 20px
+
+					p
+						color: $gray
+						font:
+							weight: 300
+							size: 18px
+						+font("Lato")
+						margin: 0
+						@media(max-width: 1573px)
+							font-size: 16px
+
+			.content2
+				height: 650px
+				background: white
+
+				position: relative
+
+				.shape
+					position: absolute
+					top: 0
+					right: -10%
+					width: 65%
+					height: inherit
+					background: #1E92D4
+					transform: skew(-20deg)
+
+				.image1
+					padding: 5%
+					display: -webkit-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					flex-direction: row
+					align-items: center
+					-webkit-align-items: center
+					justify-content: center
+					-webkit-justify-content: center
+					height: inherit
+					overflow: hidden
+					img
+						width: 500px
+						min-width: 500px
+
+				.image2
+					padding: 5%
+					display: -webkit-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					flex-direction: row
+					align-items: center
+					-webkit-align-items: center
+					justify-content: center
+					-webkit-justify-content: center
+					height: inherit
+					overflow: hidden
+					img
+						width: 500px
+						min-width: 500px
+
+			.website
+				background: #F6F6F6
+				display: -webkit-box
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				flex-direction: row
+				align-items: center
+				-webkit-align-items: center
+				justify-content: center
+				-webkit-justify-content: center
+
+				img
+					padding: 10%
+					height: 100%
+					width: 100vw
+					@media(min-width:1170px)
+						max-width: 1500px
+					@media(max-width: 750px)
+						padding: 0
+				@media(max-width:500px)
+					margin-top: 10px
+
+
+			@media(max-width: 1320px)
+				.content2
+					.image1, .image2
+						img
+							width: 400px
+							min-width: 400px
+
+			@media(max-width: 991px)
+				.header
+					img
+						@media(max-width: 680px)
+							height: 500px
+						@media(max-width: 400px)
+							height: 350px
+
+				.content
+					.image
+						height: 400px
+						background: white url(../assets/img/jrh/icon.png) center center no-repeat
+						background-size: 200px
+						img
+							display: none
+							visibility: hidden
+
+				.content2
+					height: 100%
+					.shape
+						right: -14%
+						@media(max-width: 765px)
+							right: -20%
+					@media(max-width: 500px)
+						.shape
+							display: none
+							visibility: hidden
+						.image1, .image2
+							img
+								display: none
+								visibility: hidden
+						.image1
+							background: url(../assets/img/jrh/frontMobile.png) no-repeat center
+							background-size: 100%
+							padding: 0
+							img
+								display: block
+								width: 100%
+								min-width: 100%
+						.image2
+							background: url(../assets/img/jrh/backMobile.png) no-repeat center
+							background-size: 100%
+							padding: 0
+							img
+								display: block
+								width: 100%
+								min-width: 100%
+
+
+		.mockups
+			img
+				width: 100%

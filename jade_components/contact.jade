@@ -1,0 +1,79 @@
+.container-fluid#contact
+	#menu-contact
+	.gmap#map-canvas
+
+	#contact-wrapper
+		.container
+			.col-md-12.row
+				.details-mobile
+					h3 DETAILS
+
+					h5 Joe Methven
+					p Email: 
+						a(href="mailto:contact@joemethven.com")
+							| contact@joemethven.com
+					p Website: 
+						a(href="http://joemethven.com")
+							| joemethven.com
+					p.cv Enquire for CV
+				.col-md-9
+					.col-md-12
+						#success
+							span
+								p
+									i.fa.fa-thumbs-up(style="color: #76bf77")
+									|  Your message was sent successfully! I'll be in touch!
+
+						#error
+							span
+								p
+									i.fa.fa-thumbs-down(style="color: #D9422B")
+									|  Somethings gone wrong, try refreshing and submitting the form again, or email me at 
+									a(href="mailto:contact@joemethven.com")
+										| contact@joemethven.com
+
+						form#contactForm(name="contact" action="php/mail.php" method="POST")
+							.row.formRow1
+								.col-md-6.name-input
+									.fa-wrapper
+										.fa-container
+											i.fa.fa-user
+									input(type="text" name="name" placeholder="Name" required)
+								.col-md-6.email-input
+									.fa-wrapper
+										.fa-container
+											i.fa.fa-envelope
+									input(type="email" name="email" placeholder="Email" required)
+							.row.formRow2
+								.col-md-12.subject-input
+									.fa-wrapper
+										.fa-container
+											i.fa.fa-tag
+									input(type="text" name="subject" placeholder="Subject")
+							.row.formRow3
+								.fa-wrapper.message-input
+									i.fa.fa-comment
+								.col-md-12
+									textarea(name="message", cols="30", rows="10", placeholder="Message" required)
+							.row.formRow4
+								.col-md-3.submit-input
+									input(name="submit", type="submit" value="Submit")
+
+						script $("#contactForm").validate();
+				.col-md-3.details
+					h3 DETAILS
+
+					h5 Joe Methven
+					p Email: 
+						a(href="mailto:contact@joemethven.com")
+							| contact@joemethven.com
+					p Website: 
+						a(href="http://joemethven.com")
+							| joemethven.com
+					p Location:  
+						| Essex
+					p.cv
+						a(href="mailto:contact@joemethven.com")
+							| Enquire for CV
+
+	include footer

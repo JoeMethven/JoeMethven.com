@@ -1,0 +1,218 @@
+#contact
+	background: none
+
+	#menu-contact
+		position: relative
+		top: -74px
+
+	.gmap#map-canvas
+		overflow: hidden
+		pointer-events: none
+		width: 100%
+		height: calc(30vh - 74px)
+		.gmnoprint
+			display: none
+		.gm-style-cc
+			display: none
+
+		iframe
+			width: 100%
+
+	#contact-wrapper
+		background: $dark_gray
+		height: 550px
+		display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+		display: -ms-flexbox /* TWEENER - IE 10 */
+		display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+		display: flex
+		flex-direction: row
+		align-items: center
+		-webkit-flex-direction: row
+		-webkit-align-items: center
+		padding: 100px
+		.container
+			.details, .details-mobile
+				h3
+					color: white
+					font:
+						weight: 400
+					+font("Open Sans")
+					font-size: 28px
+					margin-top: 0
+				h5, p
+					@extend h3
+					color: $gray
+					margin-bottom: 0px
+				h5
+					font-size: 17px
+					font-weight: 600
+					margin-bottom: 4px
+				p
+					font-size: 13px
+				p a
+					color: $green
+				p.cv
+					font-weight: 300
+					color: $green
+
+			// CONTACT FORM STYLING
+			#success
+				height: initial
+				position: absolute
+				top: 48%
+				width: 100%
+				color: white
+				+font("Lato")
+				font-weight: 700
+				display: flex
+				justify-content: center
+				font-size: 20px
+
+			#error
+				height: initial
+				position: absolute
+				top: 48%
+				width: 100%
+				color: white
+				+font("Lato")
+				font-weight: 700
+				display: flex
+				justify-content: center
+				font-size: 20px
+
+			#success, #error
+				display: none
+			form
+				.row
+					position: relative
+					.fa-wrapper
+						position: absolute
+						height: 40px
+					.fa-container
+						height: inherit
+						display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+						display: -ms-flexbox /* TWEENER - IE 10 */
+						display: -webkit-flex /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+						display: flex
+						flex-direction: row
+						align-items: center
+						justify-content: center
+						-webkit-justify-content: center
+						-webkit-flex-direction: row
+						-webkit-align-items: center
+					.fa
+						font-size: 20px
+						color: $gray
+						position: relative
+						left: 13px
+				.formRow3
+					position: relative
+					.fa-wrapper
+						position: absolute
+						top: 0
+						top: 10px
+						left: 13px
+					.fa
+						font-size: 20px
+						color: $gray
+						position: relative
+						z-index: 1
+				input:focus, select:focus, textarea:focus, button:focus
+					outline: none
+				input, textarea
+					overflow-x: hidden
+					overflow-y: hidden
+					resize: none
+					width: 100%
+					padding: 10px
+					background-color: $black
+					border: none
+					color: $gray
+					padding-left: 40px
+					font:
+						size: 18px
+						family: "Open Sans", Helvetica, sans-serif
+						weight: 400
+				.formRow4
+					+transition(".8s")
+					.col-md-3
+						width: 23%
+						padding-top: 15px
+					input
+						font-weight: 300
+						color: white
+						background: $purple
+						padding-left: 10px
+						text-transform: uppercase
+						+transition(".8s")
+					input:hover, input:focus
+						background: $gray_purple
+						+transition(".8s")
+				::-webkit-input-placeholder
+					opacity: 1
+					color: $gray
+				:-moz-placeholder
+					opacity: 1
+					color: $gray
+				::-moz-placeholder
+					opacity: 1
+					color: $gray
+				:-ms-input-placeholder
+					opacity: 1
+					color: $gray
+				.formRow1 .col-md-6:nth-child(1)
+					padding-right: 7.5px
+				.formRow1 .col-md-6:nth-child(2)
+					padding-left: 7.5px
+				.formRow2
+					padding-top: 15px
+					padding-bottom: 15px
+
+				i
+					z-index: 100
+
+				#name-error, #email-error, #message-error
+					color: $red
+					font-size: 12px
+					font-style: normal
+					font-weight: 400
+					position: static
+
+	@media(min-width: 993px)
+		.details-mobile
+			display: none
+			visibility: hidden
+	@media(max-width: 992px)
+		.details
+			display: none
+			visibility: hidden
+		#contact-wrapper
+			height: 800px
+		.name-input
+			padding-left: 15px!important
+			input
+				padding-right: 0
+		.email-input
+			padding-top: 15px
+			padding-left: 15px!important
+		#contact-wrapper .container form .formRow1 .col-md-6:nth-child(1)
+			padding-right: 15px
+
+		.details-mobile
+			padding-left: 30px
+			padding-bottom: 25px
+	@media(max-width:770px)
+		#contact-wrapper
+			padding: 50px
+			.container
+				width: 100%
+		.details-mobile
+			text-align: center
+			padding-left: 0
+	@media(max-width: 660px)
+		.submit-input
+			width: 100%!important
+			display: block!important
+	@media(max-width: 590px)
+		#contact-wrapper
+			padding: 0
