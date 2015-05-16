@@ -24,7 +24,6 @@
 			align-items: center
 			text-align: center
 			padding: 0
-			background-size: 130% auto!important
 
 		.overlay
 			z-index: 100
@@ -63,20 +62,35 @@
 		.stage-content1
 			background: url(../assets/img/stage1.jpg) center no-repeat
 			height: inherit
+			background-size: 130% auto
+			@media(max-width: 1018px) and (min-width: 992px)
+				background-size: 140% auto
+			@media(max-width: 991px)
+				background-size: cover
 
 		.stage-content2
 			background: url(../assets/img/stage2.jpg) center no-repeat
 			height: inherit
+			background-size: 130% auto
+			@media(max-width: 1018px) and (min-width: 992px)
+				background-size: 140% auto
+			@media(max-width: 991px)
+				background-size: cover
 
 		.stage-content3
 			background: url(../assets/img/stage3.jpg) center no-repeat
 			height: inherit
+			background-size: 130% auto
+			@media(max-width: 1018px) and (min-width: 992px)
+				background-size: 140% auto
+			@media(max-width: 991px)
+				background-size: cover
 
 		.stage-content1:hover, .stage-content2:hover, .stage-content3:hover
 			position: relative
+			background-size: 130% auto
 
-@media(max-width: 1690px)
-	#about
+	@media(max-width: 1690px)
 		.stages-wrapper .stage-1, .stages-wrapper .stage-2, .stages-wrapper .stage-3
 			height: 500px
 			@media(max-width: 1400px)
@@ -107,7 +121,3 @@
 				height: 470px
 			@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2)
 				height: 520px
-
-@media(max-width: 991px)
-	.stage-content
-		background-size: cover!important
