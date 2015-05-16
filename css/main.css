@@ -884,6 +884,20 @@ html, body {
   width: 100%;
   margin: 0; }
   #about .stages-wrapper .stage-1, #about .stages-wrapper .stage-2, #about .stages-wrapper .stage-3 {
+    overflow: hidden;
+    height: 600px;
+    padding-left: 0;
+    padding-right: 0; }
+    #about .stages-wrapper .stage-1 .content i, #about .stages-wrapper .stage-2 .content i, #about .stages-wrapper .stage-3 .content i {
+      color: #6051a3;
+      font-size: 90px;
+      padding-bottom: 10px; }
+    #about .stages-wrapper .stage-1 .content h3, #about .stages-wrapper .stage-1 .content .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-1 #learning .learning-wrapper .content p, #learning .learning-wrapper #about .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-1 .content h5, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-1 .content h5, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-2 .content h3, #about .stages-wrapper .stage-2 .content .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-2 #learning .learning-wrapper .content p, #learning .learning-wrapper #about .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-2 .content h5, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-2 .content h5, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-3 .content h3, #about .stages-wrapper .stage-3 .content .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-3 .content p, #about .stages-wrapper .stage-3 #learning .learning-wrapper .content p, #learning .learning-wrapper #about .stages-wrapper .stage-3 .content p, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-3 .content h5, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-3 .content p, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-3 .content h5, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-3 .content p {
+      color: white;
+      font-size: 34px;
+      font-family: "Raleway", Helvetica, Arial, sans-serif;
+      font-weight: 600; }
+  #about .stages-wrapper .stage-content {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -897,22 +911,8 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    height: 600px;
-    padding: 0; }
-    #about .stages-wrapper .stage-1 .content i, #about .stages-wrapper .stage-2 .content i, #about .stages-wrapper .stage-3 .content i {
-      color: #6051a3;
-      font-size: 90px;
-      padding-bottom: 10px; }
-    #about .stages-wrapper .stage-1 .content h3, #about .stages-wrapper .stage-1 .content .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-1 #learning .learning-wrapper .content p, #learning .learning-wrapper #about .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-1 .content h5, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-1 .content h5, #about .stages-wrapper .stage-1 .content #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-1 .content p, #about .stages-wrapper .stage-2 .content h3, #about .stages-wrapper .stage-2 .content .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-2 #learning .learning-wrapper .content p, #learning .learning-wrapper #about .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-2 .content h5, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-2 .content h5, #about .stages-wrapper .stage-2 .content #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-2 .content p, #about .stages-wrapper .stage-3 .content h3, #about .stages-wrapper .stage-3 .content .about-container .text-wrapper p, #about .about-container .text-wrapper .stages-wrapper .stage-3 .content p, #about .stages-wrapper .stage-3 #learning .learning-wrapper .content p, #learning .learning-wrapper #about .stages-wrapper .stage-3 .content p, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details h5, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-3 .content h5, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details p, #contact #contact-wrapper .container .details #about .stages-wrapper .stage-3 .content p, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details-mobile h5, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-3 .content h5, #about .stages-wrapper .stage-3 .content #contact #contact-wrapper .container .details-mobile p, #contact #contact-wrapper .container .details-mobile #about .stages-wrapper .stage-3 .content p {
-      color: white;
-      font-size: 34px;
-      font-family: "Raleway", Helvetica, Arial, sans-serif;
-      font-weight: 600; }
-  #about .stages-wrapper .stage-1 {
-    background: url(../assets/img/stage1.jpg) center no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    position: relative; }
+    padding: 0;
+    background-size: 130% auto !important; }
   #about .stages-wrapper .overlay {
     z-index: 100;
     display: none;
@@ -944,12 +944,17 @@ html, body {
       background-color: white; }
     #about .stages-wrapper .overlay .toph {
       margin-top: 35px; }
-  #about .stages-wrapper .stage-2 {
+  #about .stages-wrapper .stage-content1 {
+    background: url(../assets/img/stage1.jpg) center no-repeat;
+    height: inherit; }
+  #about .stages-wrapper .stage-content2 {
     background: url(../assets/img/stage2.jpg) center no-repeat;
-    background-size: cover; }
-  #about .stages-wrapper .stage-3 {
+    height: inherit; }
+  #about .stages-wrapper .stage-content3 {
     background: url(../assets/img/stage3.jpg) center no-repeat;
-    background-size: cover; }
+    height: inherit; }
+  #about .stages-wrapper .stage-content1:hover, #about .stages-wrapper .stage-content2:hover, #about .stages-wrapper .stage-content3:hover {
+    position: relative; }
 
 @media(max-width: 1690px) {
   #about .stages-wrapper .stage-1, #about .stages-wrapper .stage-2, #about .stages-wrapper .stage-3 {
@@ -986,6 +991,9 @@ html, body {
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
       #about .stages-wrapper .stage-1, #about .stages-wrapper .stage-2, #about .stages-wrapper .stage-3 {
         height: 520px; } } }
+@media(max-width: 991px) {
+  .stage-content {
+    background-size: cover !important; } }
 #about {
   background-color: white; }
   #about #menu-about {

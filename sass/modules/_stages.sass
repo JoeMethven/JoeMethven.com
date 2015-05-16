@@ -3,13 +3,10 @@
 		width: 100%
 		margin: 0
 		.stage-1, .stage-2, .stage-3
-			display: flex
-			flex-direction: column
-			justify-content: center
-			align-items: center
-			text-align: center
+			overflow: hidden
 			height: 600px
-			padding: 0
+			padding-left: 0
+			padding-right: 0
 			.content i
 				color: $purple
 				font-size: 90px
@@ -19,11 +16,15 @@
 				font-size: 34px
 				+font("Raleway")
 				font-weight: 600
-		.stage-1
-			background: url(../assets/img/stage1.jpg) center no-repeat
-			background-size: cover
-			overflow: hidden
-			position: relative
+
+		.stage-content
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			text-align: center
+			padding: 0
+			background-size: 130% auto!important
 
 		.overlay
 			z-index: 100
@@ -57,12 +58,22 @@
 			.toph
 				margin-top: 35px
 
-		.stage-2
+
+
+		.stage-content1
+			background: url(../assets/img/stage1.jpg) center no-repeat
+			height: inherit
+
+		.stage-content2
 			background: url(../assets/img/stage2.jpg) center no-repeat
-			background-size: cover
-		.stage-3
+			height: inherit
+
+		.stage-content3
 			background: url(../assets/img/stage3.jpg) center no-repeat
-			background-size: cover
+			height: inherit
+
+		.stage-content1:hover, .stage-content2:hover, .stage-content3:hover
+			position: relative
 
 @media(max-width: 1690px)
 	#about
@@ -96,3 +107,7 @@
 				height: 470px
 			@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2)
 				height: 520px
+
+@media(max-width: 991px)
+	.stage-content
+		background-size: cover!important

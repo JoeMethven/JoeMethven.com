@@ -100,8 +100,10 @@
               particular obstacles you could be facing visually.
             </p>
           </div>
-          <div class="content"><i class="fa fa-comment-o"></i>
-            <h3>CONCEPT</h3>
+          <div class="stage-content stage-content1">
+            <div class="content"><i class="fa fa-comment-o"></i>
+              <h3>CONCEPT</h3>
+            </div>
           </div>
         </div>
         <div class="col-md-4 stage-2">
@@ -123,8 +125,10 @@
               strict orders on what should and what shouldn't be in the final developed version.
             </p>
           </div>
-          <div class="content"><i class="fa fa-connectdevelop"></i>
-            <h3>CONSTRUCT</h3>
+          <div class="stage-content stage-content2">
+            <div class="content"><i class="fa fa-connectdevelop"></i>
+              <h3>CONSTRUCT</h3>
+            </div>
           </div>
         </div>
         <div class="col-md-4 stage-3">
@@ -143,8 +147,10 @@
               things you decided you now don't want.
             </p>
           </div>
-          <div class="content"><i class="fa fa-code"></i>
-            <h3>CREATE</h3>
+          <div class="stage-content stage-content3">
+            <div class="content"><i class="fa fa-code"></i>
+              <h3>CREATE</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -505,7 +511,7 @@
             <div class="col-md-6 text">
               <p><strong>What did I do? </strong><span style="font-style: italic">Logo Design &amp; Website Design.</span></p>
               <p>
-                Lake Country is a Church based in America, they needed a website to advertise themselves,
+                Lake Country is a Church community based in America, they needed a website to advertise themselves,
                 in which I provided this with a clean &amp; relaxing design with a mixture of gold and green.
                 Within this design I aimed to follow a subtle technique called material design by Google, based on
                 the flat design with light implementation of thin shadows to add depth to the website. This works
@@ -656,5 +662,13 @@
     <script src="//raw.githubusercontent.com/srobbin/jquery-backstretch/master/jquery.backstretch.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-63050498-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </footer>
 </html>
