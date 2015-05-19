@@ -15,6 +15,10 @@
     <link href="css/main.css" media="screen, projection" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <div class="notification-wrapper container-fluid">
+      <p>Hey! This websites relatively new and I'm still optimising it, this means the website may load slow for you, sorry for the inconvenience!</p>
+      <div class="notification-close"><img src="assets/img/close.png"></div>
+    </div>
     <div id="start" class="container-fluid start-wrapper">
       <div id="element"></div>
       <div class="col-md-12 logo"><a onclick="$('#home').animatescroll({scrollSpeed:2000,easing:'easeInQuad'});"><img src="assets/img/logo.png" alt="Joe Methven"></a></div>
@@ -240,6 +244,8 @@
         <div class="row row2">
           <div id="portfolio-item5" class="col-md-3 portfolio-item"><img src="assets/img/lfcwa.png"><img src="assets/img/lfcwa-active.png"></div>
           <div id="portfolio-item6" class="col-md-3 portfolio-item"><img src="assets/img/lakeCountry.png"><img src="assets/img/lakeCountry-active.png"></div>
+          <div id="portfolio-item7" class="col-md-3 portfolio-item"><img src="assets/img/bcha.png"><img src="assets/img/bcha-active.png"></div>
+          <div id="portfolio-item8" class="col-md-3 portfolio-item"><img src="assets/img/starwars.png"><img src="assets/img/starwars-active.png"></div>
         </div>
       </div>
     </div>
@@ -446,7 +452,6 @@
             </div>
           </div>
           <div class="row content2">
-            <div class="shape"></div>
             <div class="col-md-6 image1"><img src="assets/img/jrh/front.png"></div>
             <div class="col-md-6 image2"><img src="assets/img/jrh/back.png"></div>
           </div>
@@ -524,6 +529,67 @@
             <div class="col-md-6 image"></div>
           </div>
           <div class="website"><img src="assets/img/lakecountry/website.png"></div>
+        </div>
+        <div class="endItem-wrapper">
+          <div class="endItem-container">
+            <h4>END</h4>
+            <p>Thanks for reading!</p>
+            <div class="portfolioClose"><img src="assets/img/close.png" onclick="$('#menu-portfolio').animatescroll({scrollSpeed:0}); $('#test').addClass('current')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolioItem7" class="portfolioItem container-fluid">
+      <div class="portfolioClose"><img src="assets/img/portfolioClose.png" onclick="$('#menu-portfolio').animatescroll({scrollSpeed:0}); $('#test').addClass('current')"></div>
+      <div class="portfolioWrapper">
+        <div class="portfolioHeader"><img src="assets/img/bcha/header.jpg"></div>
+        <div class="portfolioContainer7 col-md-12">
+          <div class="row content">
+            <div class="col-md-6 text">
+              <p><strong>What did I do? </strong><span style="font-style: italic">Poster Design</span></p>
+              <p>
+                A housing association within my home county asked me to design an advertisement for their yearly
+                summer garden party, the poster had to reflect on independence day so I had used the colour scheme
+                of the american flag to consistently apply this widespread across the design. I chose to desaturate
+                the original tones from the flag to reflect on the past.<br><br>I had used a different perspective in which the stripes of the flag gradually enlarged on each stripe,
+                I did this because I thought it would be good to show a different perspective rather than everything being a
+                top-down design. I then designed a minimalistic barbeque on a top-down perspective using flat tones matched with
+                the initial colouring, and applied variants of typefaces within as a title for BCHA. Below I had used a specific
+                typewriter-styled font which again attempts to reflect on the past.
+                Overall I think this poster turned out great and I thoroughly enjoyed the process.
+              </p>
+            </div>
+            <div class="col-md-6 image"><img src="assets/img/bcha/invitation.jpg" alt="Poster Design by Joe Methven"></div>
+          </div>
+        </div>
+        <div class="endItem-wrapper">
+          <div class="endItem-container">
+            <h4>END</h4>
+            <p>Thanks for reading!</p>
+            <div class="portfolioClose"><img src="assets/img/close.png" onclick="$('#menu-portfolio').animatescroll({scrollSpeed:0}); $('#test').addClass('current')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolioItem8" class="portfolioItem container-fluid">
+      <div class="portfolioClose"><img src="assets/img/portfolioClose.png" onclick="$('#menu-portfolio').animatescroll({scrollSpeed:0}); $('#test').addClass('current')"></div>
+      <div class="portfolioWrapper">
+        <div class="portfolioHeader"><img src="assets/img/starWars/poster.png"></div>
+        <div class="portfolioContainer8 col-md-12">
+          <div class="row content">
+            <div class="col-md-6 text">
+              <p><strong>What did I do? </strong><span style="font-style: italic">Poster Design.</span></p>
+              <p>
+                This design was created as a final part of my college course in Graphic Design. I used the stencil
+                technique in Illustator which was inspired by Olly Moss in his Star Wars designs. This design is a scene from the
+                upcoming Star Wars film "The Force Awakens".<br><br>I used repetition of the same colour fading out slowly to show a minimalistic approach to the perspective
+                of elements getting further away. A stencil of Boba Fett was designed in the background and applied an element
+                from his helmet overlayed the initial design. I had then used a washed out/grunge technique in Photoshop by using specific
+                brushes to both erase and apply colours from the print onto different areas. <br><br><strong>Note: </strong>I'm about to start on another design in this style and will post it up shortly.
+              </p>
+            </div>
+            <div class="col-md-6 image"><img src="assets/img/starWars/poster.jpg" alt="Poster Design by Joe Methven"></div>
+          </div>
         </div>
         <div class="endItem-wrapper">
           <div class="endItem-container">
@@ -655,7 +721,22 @@
     <!-- Importing jquery.js, bootstrap.js-->
     <script src="//code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
     <script src="bower_components/jqueryui/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp" type="text/javascript"></script>
+    <script>
+       
+      function initialize() {var myLatlng = new google.maps.LatLng(51.692308,0.510695);
+      var mapOptions = {
+      disableDefaultUI: true,
+      zoom: 9,
+      center: myLatlng,
+      draggable: false,
+      scaleControl: false,
+      navigationControl: false,
+      mapTypeControl: false };
+      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     <script src="assets/scripts/min/custom-min.js" type="text/javascript"></script>
     <script src="assets/scripts/vendors/animatescroll/animatescroll.min.js" type="text/javascript"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>

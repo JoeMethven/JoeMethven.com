@@ -13,6 +13,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/bcha-active.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/img\/bcha-active.png",
+		"outputAbbreviatedPath": "\/assets\/img\/bcha-active.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/bcha.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96806,
+		"inputAbbreviatedPath": "\/assets\/img\/bcha.png",
+		"outputAbbreviatedPath": "\/assets\/img\/bcha.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/bcha\/header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 90382,
+		"inputAbbreviatedPath": "\/assets\/img\/bcha\/header.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/bcha\/header.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/bcha\/invitation.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 222790,
+		"inputAbbreviatedPath": "\/assets\/img\/bcha\/invitation.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/bcha\/invitation.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/behance-white.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -992,6 +1036,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/starwars-active.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 320207,
+		"inputAbbreviatedPath": "\/assets\/img\/starwars-active.png",
+		"outputAbbreviatedPath": "\/assets\/img\/starwars-active.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/starwars.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/img\/starwars.png",
+		"outputAbbreviatedPath": "\/assets\/img\/starwars.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/starWars\/background.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 86404,
+		"inputAbbreviatedPath": "\/assets\/img\/starWars\/background.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/starWars\/background.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/starWars\/poster.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 129773,
+		"inputAbbreviatedPath": "\/assets\/img\/starWars\/poster.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/starWars\/poster.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/starWars\/poster.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 162373,
+		"inputAbbreviatedPath": "\/assets\/img\/starWars\/poster.png",
+		"outputAbbreviatedPath": "\/assets\/img\/starWars\/poster.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/twitter-white.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1165,28 +1264,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/scripts\/vendors\/gmaps.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/scripts\/vendors\/gmaps.js",
-		"outputAbbreviatedPath": "\/assets\/scripts\/vendors\/min\/gmaps-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/assets\/scripts\/vendors\/min\/gmaps-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/scripts\/vendors\/min\/gmaps-min.js",
-		"outputAbbreviatedPath": "\/assets\/scripts\/vendors\/min\/min\/gmaps-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/bower_components\/bootstrap\/dist\/css\/bootstrap-theme.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -1300,12 +1377,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap\/gruntfile.js": {
+	"\/bower_components\/bootstrap\/Gruntfile.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap\/gruntfile.js",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap\/min\/gruntfile-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap\/Gruntfile.js",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap\/min\/Gruntfile-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -2854,15 +2931,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/bootstrap\/readme.md": {
+	"\/bower_components\/bootstrap\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/bootstrap\/readme.md",
-		"outputAbbreviatedPath": "\/bower_components\/bootstrap\/readme.html",
+		"inputAbbreviatedPath": "\/bower_components\/bootstrap\/README.md",
+		"outputAbbreviatedPath": "\/bower_components\/bootstrap\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -3758,23 +3835,23 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/jquery\/src\/var\/hasown.js": {
+	"\/bower_components\/jquery\/src\/var\/hasOwn.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/hasown.js",
-		"outputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/min\/hasown-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/hasOwn.js",
+		"outputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/min\/hasOwn-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/jquery\/src\/var\/indexof.js": {
+	"\/bower_components\/jquery\/src\/var\/indexOf.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/indexof.js",
-		"outputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/min\/indexof-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/indexOf.js",
+		"outputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/min\/indexOf-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -3846,12 +3923,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/jquery\/src\/var\/tostring.js": {
+	"\/bower_components\/jquery\/src\/var\/toString.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/tostring.js",
-		"outputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/min\/tostring-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/toString.js",
+		"outputAbbreviatedPath": "\/bower_components\/jquery\/src\/var\/min\/toString-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -11150,15 +11227,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/normalize-css\/license.md": {
+	"\/bower_components\/normalize-css\/LICENSE.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/normalize-css\/license.md",
-		"outputAbbreviatedPath": "\/bower_components\/normalize-css\/license.html",
+		"inputAbbreviatedPath": "\/bower_components\/normalize-css\/LICENSE.md",
+		"outputAbbreviatedPath": "\/bower_components\/normalize-css\/LICENSE.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -11171,15 +11248,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/normalize-css\/readme.md": {
+	"\/bower_components\/normalize-css\/README.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/normalize-css\/readme.md",
-		"outputAbbreviatedPath": "\/bower_components\/normalize-css\/readme.html",
+		"inputAbbreviatedPath": "\/bower_components\/normalize-css\/README.md",
+		"outputAbbreviatedPath": "\/bower_components\/normalize-css\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -11211,6 +11288,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/index.php": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/jade_components\/about.jade": {
 		"compileDebug": 1,
@@ -11406,6 +11492,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade_components\/portfolio_items\/item6.jade",
 		"outputAbbreviatedPath": "\/jade_components\/portfolio_items\/item6.php",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade_components\/portfolio_items\/item7.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade_components\/portfolio_items\/item7.jade",
+		"outputAbbreviatedPath": "\/jade_components\/portfolio_items\/item7.php",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/jade_components\/portfolio_items\/item8.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jade_components\/portfolio_items\/item8.jade",
+		"outputAbbreviatedPath": "\/jade_components\/portfolio_items\/item8.php",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -11893,6 +12001,38 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/modules\/portfolioItems\/_portfolioItem6.sass",
 		"outputAbbreviatedPath": "\/css\/_portfolioItem6.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/sass\/modules\/portfolioItems\/_portfolioItem7.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/modules\/portfolioItems\/_portfolioItem7.sass",
+		"outputAbbreviatedPath": "\/css\/_portfolioItem7.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/sass\/modules\/portfolioItems\/_portfolioItem8.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/modules\/portfolioItems\/_portfolioItem8.sass",
+		"outputAbbreviatedPath": "\/css\/_portfolioItem8.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

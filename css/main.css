@@ -729,10 +729,51 @@ html, body {
     #footer-wrapper .left {
       margin-bottom: 20px;
       text-align: center; } }
-::-webkit-scrollbar {
-  display: none;
-  visibility: hidden; }
+.notificationOn {
+  display: block !important;
+  opacity: 1; }
 
+.notificationOff {
+  display: none !important;
+  opacity: 0 !important; }
+
+.notification-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 1100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #6051a3;
+  text-align: left;
+  width: 100%;
+  height: initial;
+  padding-right: 0; }
+  .notification-wrapper p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    padding-right: 20px;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    display: inline-block; }
+  .notification-wrapper .notification-close {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+    display: inline-block;
+    float: right;
+    background: #cc6767;
+    width: 80px;
+    height: initial;
+    text-align: center; }
+    .notification-wrapper .notification-close img {
+      height: 17px;
+      margin: 10px auto; }
+@media(max-width: 980px) {
+  .notification-wrapper {
+    display: none !important; } }
 #home, #about, #portfolio, #contact {
   padding: 0;
   background: white; }
@@ -784,23 +825,23 @@ html, body {
     height: 100%; }
   #home .triangle img {
     position: relative;
-    right: 600px; }
+    right: 575px; }
   #home .triangle {
     overflow: hidden;
     position: absolute;
     height: 100vh;
     left: 7px;
-    -webkit-transform: skewX(45deg);
-        -ms-transform: skewX(45deg);
-            transform: skewX(45deg); }
+    -webkit-transform: skewX(44.8deg);
+        -ms-transform: skewX(44.8deg);
+            transform: skewX(44.8deg); }
   #home .triangle:first-child {
     -webkit-transform-origin: 100% 0;
         -ms-transform-origin: 100% 0;
             transform-origin: 100% 0; }
   #home .triangle img, #home .triangle:after {
-    -webkit-transform: skewX(-45deg);
-        -ms-transform: skewX(-45deg);
-            transform: skewX(-45deg);
+    -webkit-transform: skewX(-44.8deg);
+        -ms-transform: skewX(-44.8deg);
+            transform: skewX(-44.8deg);
     -webkit-transform-origin: inherit;
         -ms-transform-origin: inherit;
             transform-origin: inherit; }
@@ -2355,7 +2396,7 @@ html, body {
     font-size: 16px; } }
   #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 {
     height: 650px;
-    background: white;
+    background: #1E92D4;
     position: relative; }
     #portfolioItem4 .portfolioWrapper .portfolioContainer4 .content2 .shape {
       position: absolute;
@@ -2822,3 +2863,240 @@ html, body {
   #portfolioItem6 .portfolioWrapper .portfolioContainer6 .website {
     padding: 0;
     height: initial; } }
+#portfolioItem7 .portfolioWrapper .portfolioHeader img {
+  width: 25%; }
+@media(max-width: 1080px) {
+  #portfolioItem7 .portfolioWrapper .portfolioHeader img {
+    width: 35%; } }
+@media(max-width: 632px) {
+  #portfolioItem7 .portfolioWrapper .portfolioHeader img {
+    width: 50%; } }
+@media(max-width: 400px) {
+  #portfolioItem7 .portfolioWrapper .portfolioHeader img {
+    width: 65%; } }
+#portfolioItem7 .portfolioHeader {
+  background: url(../assets/img/starWars/background.jpg) no-repeat center;
+  background-size: cover; }
+  #portfolioItem7 .portfolioHeader img {
+    max-width: 300px;
+    max-height: 404px; }
+#portfolioItem7 .portfolioWrapper .portfolioContainer7 {
+  padding-right: 0;
+  padding-left: 0; }
+  #portfolioItem7 .portfolioWrapper .portfolioContainer7 .header {
+    height: 600px;
+    width: 100vw;
+    background: #D5A15E;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 5px solid #66A066; }
+    #portfolioItem7 .portfolioWrapper .portfolioContainer7 .header img {
+      height: 600px;
+      width: auto;
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      right: 0;
+      margin: auto; }
+@media(max-width:400px) {
+  #portfolioItem7 .portfolioWrapper .portfolioContainer7 .header {
+    height: 500px; }
+    #portfolioItem7 .portfolioWrapper .portfolioContainer7 .header img {
+      height: 500px; } }
+  #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content {
+    background: white;
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-align: start;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center; }
+@media(max-width: 1132px) {
+  #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-direction: column; }
+    #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .text {
+      width: 100%; }
+    #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .image {
+      width: 100%; } }
+    #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .text {
+      height: 800px;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      -webkit-align-items: flex-start;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .text p {
+        padding: 10%;
+        color: #7A7979;
+        font-weight: 300;
+        font-size: 16px;
+        font-family: "Lato", Helvetica, Arial, sans-serif; }
+        #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .text p:nth-child(1) {
+          padding-bottom: 0px; }
+        #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .text p:nth-child(2) {
+          padding-top: 0; }
+@media(max-width: 615px) {
+  #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .text {
+    height: 500px; } }
+@media(max-width: 500px) {
+  #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .text {
+    height: 600px; } }
+@media(max-width: 400px) {
+  #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .text {
+    height: 700px; } }
+@media(max-width: 350px) {
+  #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .text {
+    height: 730px; } }
+    #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .image {
+      overflow: hidden;
+      height: initial;
+      padding-left: 0;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      #portfolioItem7 .portfolioWrapper .portfolioContainer7 .content .image img {
+        width: 100%; }
+
+#portfolioItem8 .portfolioWrapper .portfolioHeader img {
+  width: 25%; }
+@media(max-width: 1080px) {
+  #portfolioItem8 .portfolioWrapper .portfolioHeader img {
+    width: 35%; } }
+@media(max-width: 632px) {
+  #portfolioItem8 .portfolioWrapper .portfolioHeader img {
+    width: 50%; } }
+@media(max-width: 400px) {
+  #portfolioItem8 .portfolioWrapper .portfolioHeader img {
+    width: 65%; } }
+#portfolioItem8 .portfolioHeader {
+  background: url(../assets/img/starWars/background.jpg) no-repeat center;
+  background-size: cover; }
+  #portfolioItem8 .portfolioHeader img {
+    max-width: 400px;
+    max-height: 533px; }
+#portfolioItem8 .portfolioWrapper .portfolioContainer8 {
+  padding-right: 0;
+  padding-left: 0; }
+  #portfolioItem8 .portfolioWrapper .portfolioContainer8 .header {
+    height: 600px;
+    width: 100vw;
+    background: #D5A15E;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 5px solid #66A066; }
+    #portfolioItem8 .portfolioWrapper .portfolioContainer8 .header img {
+      height: 600px;
+      width: auto;
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      right: 0;
+      margin: auto; }
+@media(max-width:400px) {
+  #portfolioItem8 .portfolioWrapper .portfolioContainer8 .header {
+    height: 500px; }
+    #portfolioItem8 .portfolioWrapper .portfolioContainer8 .header img {
+      height: 500px; } }
+  #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content {
+    background: white;
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-align: start;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center; }
+@media(max-width: 1132px) {
+  #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-direction: column; }
+    #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .text {
+      width: 100%; }
+    #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .image {
+      width: 100%; } }
+    #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .text {
+      height: 800px;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      -webkit-align-items: flex-start;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .text p {
+        padding: 10%;
+        color: #7A7979;
+        font-weight: 300;
+        font-size: 16px;
+        font-family: "Lato", Helvetica, Arial, sans-serif; }
+        #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .text p:nth-child(1) {
+          padding-bottom: 0px; }
+        #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .text p:nth-child(2) {
+          padding-top: 0; }
+@media(max-width: 615px) {
+  #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .text {
+    height: 500px; } }
+@media(max-width: 500px) {
+  #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .text {
+    height: 600px; } }
+@media(max-width: 400px) {
+  #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .text {
+    height: 700px; } }
+@media(max-width: 350px) {
+  #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .text {
+    height: 730px; } }
+    #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .image {
+      overflow: hidden;
+      height: initial;
+      padding-left: 0;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -webkit-justify-content: center; }
+      #portfolioItem8 .portfolioWrapper .portfolioContainer8 .content .image img {
+        width: 100%; }
