@@ -1,0 +1,37 @@
+#portfolioItem8.portfolioItem.container-fluid
+
+	.portfolioClose
+		img(src="assets/img/portfolioClose.png" onclick="$('#menu-portfolio').animatescroll({scrollSpeed:0}); $('#test').addClass('current')")
+	.portfolioWrapper
+		.portfolioHeader
+			img(src="assets/img/starWars/poster.png")
+		.portfolioContainer8.col-md-12
+
+			.row.content
+				.col-md-6.text
+					p
+						strong What did I do? 
+						span(style="font-style: italic") Poster Design.
+					p
+						| This design was created as a final part of my college course in Graphic Design. I used the stencil
+						| technique in Illustator which was inspired by Olly Moss in his Star Wars designs. This design is a scene from the
+						| upcoming Star Wars film "The Force Awakens".
+						br
+						br
+						| I used repetition of the same colour fading out slowly to show a minimalistic approach to the perspective
+						| of elements getting further away. A stencil of Boba Fett was designed in the background and applied an element
+						| from his helmet overlayed the initial design. I had then used a washed out/grunge technique in Photoshop by using specific
+						| brushes to both erase and apply colours from the print onto different areas. 
+						br
+						br
+						strong Note: 
+						| I'm about to start on another design in this style and will post it up shortly.
+				.col-md-6.image
+					img(src="assets/img/starWars/poster.jpg", alt="Poster Design by Joe Methven")
+
+		.endItem-wrapper
+			.endItem-container
+				h4 END
+				p Thanks for reading!
+				.portfolioClose
+					img(src="assets/img/close.png" onclick="$('#menu-portfolio').animatescroll({scrollSpeed:0}); $('#test').addClass('current')")

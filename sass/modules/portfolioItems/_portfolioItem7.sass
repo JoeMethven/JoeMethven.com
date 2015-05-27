@@ -1,0 +1,121 @@
+#portfolioItem7 .portfolioWrapper .portfolioHeader img
+	width: 25%
+	@media(max-width: 1080px)
+		width: 35%
+	@media(max-width: 632px)
+		width: 50%
+	@media(max-width: 400px)
+		width: 65%
+
+#portfolioItem7
+	.portfolioHeader
+		background: url(../assets/img/starWars/background.jpg) no-repeat center
+		background-size: cover
+		img
+			max-width: 300px
+			max-height: 404px
+	.portfolioWrapper
+		.portfolioContainer7
+			padding-right: 0
+			padding-left: 0
+			.header
+				height: 600px
+				width: 100vw
+				background: #D5A15E
+				position: relative
+				overflow: hidden
+
+				border-bottom: 5px solid #66A066
+
+				img
+					height: 600px
+					width: auto
+					position: absolute
+					bottom: -100px
+					left: 0
+					right: 0
+					margin: auto
+				@media(max-width:400px)
+					height: 500px
+					img
+						height: 500px
+
+
+			.content
+				background: white
+				height: 100%
+				display: -ms-flexbox
+				display: -webkit-flex
+				display: flex
+				-ms-flex-direction: row
+				flex-direction: row
+				-webkit-flex-direction: row
+				-ms-flex-align: start
+				align-items: center
+				-webkit-align-items: center
+				-ms-flex-pack: center
+				justify-content: center
+				-webkit-justify-content: center
+
+				@media(max-width: 1132px)
+					-ms-flex-direction: column
+					flex-direction: column
+					-webkit-flex-direction: column
+					.text
+						width: 100%
+					.image
+						width: 100%
+
+				.text
+					height: 800px
+					display: -webkit-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					flex-direction: column
+					-webkit-flex-direction: column
+					align-items: flex-start
+					-webkit-align-items: flex-start
+					justify-content: center
+					-webkit-justify-content: center
+
+					p
+						padding: 10%
+						color: $gray
+						font:
+							weight: 300
+							size: 16px
+						+font("Lato")
+
+						&:nth-child(1)
+							padding-bottom: 0px
+
+						&:nth-child(2)
+							padding-top: 0
+
+					@media(max-width: 615px)
+						height: 500px
+					@media(max-width: 500px)
+						height: 600px
+					@media(max-width: 400px)
+						height: 700px
+					@media(max-width: 350px)
+						height: 730px
+
+				.image
+					overflow: hidden
+					height: initial
+					padding-left: 0
+
+					display: -webkit-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					flex-direction: row
+					align-items: center
+					-webkit-align-items: center
+					justify-content: center
+					-webkit-justify-content: center
+
+					img
+						width: 100%
