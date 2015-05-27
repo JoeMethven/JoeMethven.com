@@ -236,16 +236,16 @@
       <div id="menu-portfolio"></div>
       <div class="portfolio-container col-md-12">
         <div class="row row1">
-          <div id="portfolio-item1" class="col-md-3 portfolio-item"><img src="assets/img/craftguard.png"><img src="assets/img/craftguard-active.png"></div>
-          <div id="portfolio-item2" class="col-md-3 portfolio-item"><img src="assets/img/booket.png"><img src="assets/img/booket-active.png"></div>
-          <div id="portfolio-item3" class="col-md-3 portfolio-item"><img src="assets/img/chromahills.png"><img src="assets/img/chromahills-active.png"></div>
-          <div id="portfolio-item4" class="col-md-3 portfolio-item"><img src="assets/img/jrh.png"><img src="assets/img/jrh-active.png"></div>
+          <div id="portfolio-item1" class="col-md-3 portfolio-item"><img src="assets/img/craftguard.png" alt="Craft Guard Graphic Design, CMS Styling and Content Creation"><img src="assets/img/craftguard-active.png"></div>
+          <div id="portfolio-item2" class="col-md-3 portfolio-item"><img src="assets/img/booket.png" alt="Booket Website Design"><img src="assets/img/booket-active.png"></div>
+          <div id="portfolio-item3" class="col-md-3 portfolio-item"><img src="assets/img/chromahills.png" alt="Chroma Hills Icon and Website Design"><img src="assets/img/chromahills-active.png"></div>
+          <div id="portfolio-item4" class="col-md-3 portfolio-item"><img src="assets/img/jrh.png" alt="JRH Civil Engineering Website, Logo and Business Card Design"><img src="assets/img/jrh-active.png"></div>
         </div>
         <div class="row row2">
-          <div id="portfolio-item5" class="col-md-3 portfolio-item"><img src="assets/img/lfcwa.png"><img src="assets/img/lfcwa-active.png"></div>
-          <div id="portfolio-item6" class="col-md-3 portfolio-item"><img src="assets/img/lakeCountry.png"><img src="assets/img/lakeCountry-active.png"></div>
-          <div id="portfolio-item7" class="col-md-3 portfolio-item"><img src="assets/img/bcha.png"><img src="assets/img/bcha-active.png"></div>
-          <div id="portfolio-item8" class="col-md-3 portfolio-item"><img src="assets/img/starwars.png"><img src="assets/img/starwars-active.png"></div>
+          <div id="portfolio-item5" class="col-md-3 portfolio-item"><img src="assets/img/lfcwa.png" alt="Liverpool Football Club West Australia Supporters Graphic Design"><img src="assets/img/lfcwa-active.png"></div>
+          <div id="portfolio-item6" class="col-md-3 portfolio-item"><img src="assets/img/lakeCountry.png" alt="Lake Country Website"><img src="assets/img/lakeCountry-active.png"></div>
+          <div id="portfolio-item7" class="col-md-3 portfolio-item"><img src="assets/img/bcha.png" alt="BCHA Summer Garden Party Poster Design"><img src="assets/img/bcha-active.png"></div>
+          <div id="portfolio-item8" class="col-md-3 portfolio-item"><img src="assets/img/starwars.png" alt="Star Wars Film Poster Design"><img src="assets/img/starwars-active.png"></div>
         </div>
       </div>
     </div>

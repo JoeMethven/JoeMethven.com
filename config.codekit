@@ -567,7 +567,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 14584,
+		"initialSize": 12791,
 		"inputAbbreviatedPath": "\/assets\/img\/github.png",
 		"outputAbbreviatedPath": "\/assets\/img\/github.png",
 		"outputPathIsOutsideProject": 0,
@@ -761,46 +761,46 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/lakecountry\/image.png": {
+	"\/assets\/img\/lakeCountry\/image.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 866520,
-		"inputAbbreviatedPath": "\/assets\/img\/lakecountry\/image.png",
-		"outputAbbreviatedPath": "\/assets\/img\/lakecountry\/image.png",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/img\/lakeCountry\/image.png",
+		"outputAbbreviatedPath": "\/assets\/img\/lakeCountry\/image.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/lakecountry\/logo.png": {
+	"\/assets\/img\/lakeCountry\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 48757,
-		"inputAbbreviatedPath": "\/assets\/img\/lakecountry\/logo.png",
-		"outputAbbreviatedPath": "\/assets\/img\/lakecountry\/logo.png",
+		"inputAbbreviatedPath": "\/assets\/img\/lakeCountry\/logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/lakeCountry\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/lakecountry\/mobile.png": {
+	"\/assets\/img\/lakeCountry\/mobile.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 98950,
-		"inputAbbreviatedPath": "\/assets\/img\/lakecountry\/mobile.png",
-		"outputAbbreviatedPath": "\/assets\/img\/lakecountry\/mobile.png",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/assets\/img\/lakeCountry\/mobile.png",
+		"outputAbbreviatedPath": "\/assets\/img\/lakeCountry\/mobile.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/lakecountry\/website.png": {
+	"\/assets\/img\/lakeCountry\/website.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 198668,
-		"inputAbbreviatedPath": "\/assets\/img\/lakecountry\/website.png",
-		"outputAbbreviatedPath": "\/assets\/img\/lakecountry\/website.png",
+		"initialSize": 194158,
+		"inputAbbreviatedPath": "\/assets\/img\/lakeCountry\/website.png",
+		"outputAbbreviatedPath": "\/assets\/img\/lakeCountry\/website.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1106,7 +1106,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 12355,
+		"initialSize": 19461,
 		"inputAbbreviatedPath": "\/assets\/img\/twitter.png",
 		"outputAbbreviatedPath": "\/assets\/img\/twitter.png",
 		"outputPathIsOutsideProject": 0,
@@ -11289,15 +11289,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/index.php": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/jade_components\/about.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -11944,15 +11935,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/sass\/modules\/portfolioItems\/_portfolioitem3.sass": {
+	"\/sass\/modules\/portfolioItems\/_portfolioItem3.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/modules\/portfolioItems\/_portfolioitem3.sass",
-		"outputAbbreviatedPath": "\/css\/_portfolioitem3.css",
+		"inputAbbreviatedPath": "\/sass\/modules\/portfolioItems\/_portfolioItem3.sass",
+		"outputAbbreviatedPath": "\/css\/_portfolioItem3.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -11960,15 +11951,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/sass\/modules\/portfolioItems\/_portfolioitem4.sass": {
+	"\/sass\/modules\/portfolioItems\/_portfolioItem4.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 2,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/sass\/modules\/portfolioItems\/_portfolioitem4.sass",
-		"outputAbbreviatedPath": "\/css\/_portfolioitem4.css",
+		"inputAbbreviatedPath": "\/sass\/modules\/portfolioItems\/_portfolioItem4.sass",
+		"outputAbbreviatedPath": "\/css\/_portfolioItem4.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
